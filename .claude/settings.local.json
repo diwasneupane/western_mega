@@ -7,7 +7,8 @@
       "Bash(Get-Content \"C:\\\\Users\\\\HP\\\\.claude\\\\projects\\\\D--static-WMC\\\\d40c524d-3544-4848-8a9f-a0e207e4e128.jsonl\")",
       "Bash(Select-Object -Last 100)",
       "Bash(python3 -c ' *)",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "PowerShell(Get-ChildItem \"D:\\\\static-WMC\" -Name -Depth 0 | Where-Object { $_ -match \"vercel|next\\\\.config\" })"
     ]
   }
 }
