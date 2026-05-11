@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, Clock, BookOpen, Cpu, Shield, Globe, Star } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
@@ -15,7 +16,15 @@ export default function BITPage() {
 
   return (
     <>
-      <div className="page-hero">
+      <div className="page-hero" style={{ position: "relative" }}>
+        {/* Faded technology background */}
+        <div className="absolute inset-0" style={{ zIndex: 0 }}>
+          <Image
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80"
+            alt="" fill className="object-cover object-center" unoptimized priority
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(255,255,255,0.88)" }} />
+        </div>
         <div className="container relative z-10">
           <div className="flex items-center gap-2 mb-3 text-sm" style={{ color:"var(--color-muted)" }}>
             <Link href="/courses" className="hover:underline">Programs</Link>

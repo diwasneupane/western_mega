@@ -3,7 +3,11 @@
     "allow": [
       "Bash(node -e \"const d = require\\('./data.json'\\); const bhm = d.programs.find\\(p=>p.id==='bhm'\\); console.log\\('BHM has curriculum:', !!bhm.curriculum\\); if\\(bhm.curriculum\\) console.log\\('BHM semesters:', bhm.curriculum.semesters?.length\\); const mba = d.programs.find\\(p=>p.id==='mba'\\); console.log\\('MBA has curriculum:', !!mba.curriculum\\); if\\(mba.curriculum\\) console.log\\('MBA semesters:', mba.curriculum.semesters?.length\\);\")",
       "Bash(node -e \"const d = require\\('./data.json'\\); const bhm = d.programs.find\\(p=>p.id==='bhm'\\); console.log\\('BHM keys:', Object.keys\\(bhm\\)\\); console.log\\('BHM focus_areas:', bhm.focus_areas?.slice\\(0,3\\)\\); const mba = d.programs.find\\(p=>p.id==='mba'\\); console.log\\('MBA keys:', Object.keys\\(mba\\)\\); console.log\\('principal keys:', Object.keys\\(d.principal\\)\\); console.log\\('media keys:', Object.keys\\(d.media||{}\\)\\);\")",
-      "Bash(node -e \"const d = require\\('./data.json'\\); console.log\\('gallery count:', d.gallery?.length\\); if\\(d.gallery\\) d.gallery.slice\\(0,3\\).forEach\\(g=>console.log\\(g.image||g.url||g.src||JSON.stringify\\(Object.keys\\(g\\)\\)\\)\\); console.log\\('events with thumb:', d.events.filter\\(e=>e.thumbnail\\).length\\); if\\(d.events[0]?.thumbnail\\) console.log\\('ev thumb:', d.events[0].thumbnail.slice\\(0,80\\)\\);\")"
+      "Bash(node -e \"const d = require\\('./data.json'\\); console.log\\('gallery count:', d.gallery?.length\\); if\\(d.gallery\\) d.gallery.slice\\(0,3\\).forEach\\(g=>console.log\\(g.image||g.url||g.src||JSON.stringify\\(Object.keys\\(g\\)\\)\\)\\); console.log\\('events with thumb:', d.events.filter\\(e=>e.thumbnail\\).length\\); if\\(d.events[0]?.thumbnail\\) console.log\\('ev thumb:', d.events[0].thumbnail.slice\\(0,80\\)\\);\")",
+      "Bash(Get-Content \"C:\\\\Users\\\\HP\\\\.claude\\\\projects\\\\D--static-WMC\\\\d40c524d-3544-4848-8a9f-a0e207e4e128.jsonl\")",
+      "Bash(Select-Object -Last 100)",
+      "Bash(python3 -c ' *)",
+      "Bash(python -c ' *)"
     ]
   }
 }

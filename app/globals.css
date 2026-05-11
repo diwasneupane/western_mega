@@ -272,3 +272,10 @@
 
   .divider { border: none; border-top: 1px solid var(--color-border); margin: 0; }
 }
+
+@media (max-width: 1023px) {
+  .page-hero {
+    padding-top: 5rem;   /* 56px mobile nav + 24px breathing */
+    padding-bottom: 2.5rem;
+  }
+}
