@@ -468,7 +468,7 @@ export default function Navbar() {
         }}
       >
         <Link href="/admission" className="btn-gold w-full justify-center py-3 text-sm">
-          Apply Now – Admissions Open 2025
+          Apply Now – Admissions Open 2026
         </Link>
       </div>
     </>

@@ -490,7 +490,7 @@ export default function HomePage() {
         <div className="container relative text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold mb-4"
             style={{ background:"rgba(255,255,255,0.15)", color:"#fff", border:"1px solid rgba(255,255,255,0.25)" }}>
-            <Sparkles className="w-3.5 h-3.5" /> Admissions Open 2025
+            <Sparkles className="w-3.5 h-3.5" /> Admissions Open 2026
           </div>
           <h2 className="font-serif text-3xl font-bold text-white mb-3" style={{ letterSpacing:"-0.02em" }}>
             Begin Your Journey at WMC

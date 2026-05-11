@@ -19,7 +19,7 @@ export default function AdmissionPage() {
         <div className="container relative z-10">
           <div className="inline-block px-3 py-1 rounded-full text-[0.6875rem] font-bold uppercase tracking-wider mb-4"
             style={{ background:"var(--color-gold)", color:"#fff" }}>
-            Admissions Open 2025
+            Admissions Open 2026
           </div>
           <h1 className="font-serif text-4xl md:text-5xl font-bold page-hero-title mb-3" style={{ letterSpacing:"-0.02em" }}>
             Apply to Western Mega College
