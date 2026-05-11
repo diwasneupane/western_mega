@@ -488,48 +488,123 @@
     }
   ],
 
-  "gallery": [
-    {
-      "id": "gallery-1",
-      "title": "Annual Hospitality Festival",
-      "category": "Events",
-      "images": [
-        { "url": "https://westernmegabackend.e-aribt.com/uploads/western event ticket-e5f66a.png", "caption": "Annual Hospitality Festival 2025" }
-      ]
-    },
-    {
-      "id": "gallery-2",
-      "title": "MBA Workshop – Research & Publication",
-      "category": "Academic",
-      "images": [
-        { "url": "https://westernmegabackend.e-aribt.com/uploads/mba workshop grup photo-4e605e.jpeg", "caption": "MBA students at the Research & Publication Workshop, August 2025" }
-      ]
-    },
-    {
-      "id": "gallery-3",
-      "title": "Trek to Kenjing Gumba",
-      "category": "Adventure",
-      "images": [
-        { "url": "https://westernmegabackend.e-aribt.com/uploads/265953756_2738125833000588_4772341212623859313_n-1536x1152-09f174.jpg", "caption": "6th Semester BHM students at Kenjing Gumba Trek, December 2021" }
-      ]
-    },
-    {
-      "id": "gallery-4",
-      "title": "Industrial Visit – Unnati Cultural Village",
-      "category": "Industrial Visit",
-      "images": [
-        { "url": "https://westernmegabackend.e-aribt.com/uploads/267593289_1077396386412802_3633348452218638298_n-2c8120.jpg", "caption": "BHM students at Unnati Cultural Village, Chitwan" }
-      ]
-    },
-    {
-      "id": "gallery-5",
-      "title": "Academic Visit – Chitlang",
-      "category": "Industrial Visit",
-      "images": [
-        { "url": "https://westernmegabackend.e-aribt.com/uploads/261393449_1353180225119447_3178589903578193490_n-1536x1152-ad36b1.jpg", "caption": "4th Semester BHM students at Chitlang homestay and wine processing visit" }
-      ]
-    }
-  ],
+ "gallery": [
+  {
+    "id": "gallery-1",
+    "title": "Annual Hospitality Festival",
+    "category": "Events",
+    "images": [
+      {
+        "url": "https://westernmegabackend.e-aribt.com/uploads/western event ticket-e5f66a.png",
+        "caption": "Annual Hospitality Festival 2025"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1511578314322-379afb476865",
+        "caption": "Students participating in hospitality festival activities"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30",
+        "caption": "Live cultural performances during the annual festival"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1505236858219-8359eb29e329",
+        "caption": "Festival crowd and hospitality event setup"
+      }
+    ]
+  },
+  {
+    "id": "gallery-2",
+    "title": "MBA Workshop – Research & Publication",
+    "category": "Academic",
+    "images": [
+      {
+        "url": "https://westernmegabackend.e-aribt.com/uploads/mba workshop grup photo-4e605e.jpeg",
+        "caption": "MBA students at the Research & Publication Workshop, August 2025"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+        "caption": "Workshop session on academic research methods"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+        "caption": "Students collaborating during publication training"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1513258496099-48168024aec0",
+        "caption": "Interactive MBA academic workshop environment"
+      }
+    ]
+  },
+  {
+    "id": "gallery-3",
+    "title": "Trek to Kenjing Gumba",
+    "category": "Adventure",
+    "images": [
+      {
+        "url": "https://westernmegabackend.e-aribt.com/uploads/265953756_2738125833000588_4772341212623859313_n-1536x1152-09f174.jpg",
+        "caption": "6th Semester BHM students at Kenjing Gumba Trek, December 2021"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b",
+        "caption": "Mountain trekking trail during the adventure trip"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+        "caption": "Students exploring scenic hiking routes"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1522163182402-834f871fd851",
+        "caption": "Group photo during the trekking expedition"
+      }
+    ]
+  },
+  {
+    "id": "gallery-4",
+    "title": "Industrial Visit – Unnati Cultural Village",
+    "category": "Industrial Visit",
+    "images": [
+      {
+        "url": "https://westernmegabackend.e-aribt.com/uploads/267593289_1077396386412802_3633348452218638298_n-2c8120.jpg",
+        "caption": "BHM students at Unnati Cultural Village, Chitwan"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205",
+        "caption": "Students learning cultural hospitality practices"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac",
+        "caption": "Industrial visit interaction with local community"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+        "caption": "Hospitality students during field learning activities"
+      }
+    ]
+  },
+  {
+    "id": "gallery-5",
+    "title": "Academic Visit – Chitlang",
+    "category": "Industrial Visit",
+    "images": [
+      {
+        "url": "https://westernmegabackend.e-aribt.com/uploads/261393449_1353180225119447_3178589903578193490_n-1536x1152-ad36b1.jpg",
+        "caption": "4th Semester BHM students at Chitlang homestay and wine processing visit"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+        "caption": "Scenic countryside view during the academic visit"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+        "caption": "Students exploring local homestay operations"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1521295121783-8a321d551ad2",
+        "caption": "Educational tour focused on wine processing and tourism"
+      }
+    ]
+  }
+],
 
   "alumni_testimonials": [
     {
