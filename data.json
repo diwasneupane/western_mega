@@ -1,0 +1,671 @@
+{
+  "college": {
+    "name": "Western Mega College",
+    "short_name": "WMC",
+    "founded": 2013,
+    "tagline": "Hospitality & Management Excellence Since 2013",
+    "description": "Western Mega College stands at the forefront of higher education, offering industry-relevant programs like Bachelor of Hotel Management (BHM), Master of Business Administration (MBA), and the upcoming Bachelor of Information Technology (BIT). The institution is dedicated to shaping future hospitality leaders, business professionals, and technology experts through innovative teaching, real-world exposure, and a focus on holistic growth.",
+    "google_rating": 4.3,
+    "google_reviews_count": 22,
+    "located_in": "Aramba Resort",
+    "location": "Butwal, Lumbini Province, Nepal",
+    "campus_location_description": "Located at the heart of Dhawaha, Butwal",
+    "affiliation": "Lincoln University College, Malaysia",
+    "affiliation_url": "https://www.lincoln.edu.my/",
+    "website": "https://westernmegacollege.edu.np/",
+    "whatsapp": "9857071252",
+    "whatsapp_url": "https://wa.me/9857071252?text=Hi!%20I%E2%80%99m%20interested%20in%20your%20programs."
+  },
+
+  "contact": {
+    "phone": ["071422131", "071422132", "071422134", "9857071252", "9857070832"],
+    "email": "info@westernmegacollege.edu.np",
+    "whatsapp": "9857071252",
+    "address": "Dhawaha, Butwal, Lumbini Province, Nepal",
+    "office_hours": "Sunday – Friday: 9:00 AM – 5:00 PM",
+    "inquiry_types": [
+      "General Inquiry",
+      "Admission",
+      "Academic Information",
+      "Technical Support",
+      "Student Support",
+      "Other"
+    ]
+  },
+
+  "navigation": {
+    "main": ["Home", "About", "Courses"],
+    "our_team": ["Our Principal", "Board of Directors", "Faculty Members", "Staff Members"],
+    "other": ["Gallery", "Blog", "Events", "Admission", "Contact"]
+  },
+
+  "hero_section": {
+    "headline": "Build Your Career in BHM, MBA & BIT at Western Mega College",
+    "subheadline": "Join a decade-strong legacy in hospitality, management, and technology education. Our programs blend academic excellence with hands-on experience, preparing you for global careers.",
+    "cta_primary": { "label": "Apply Now", "url": "/Admission" },
+    "cta_secondary": { "label": "Explore Programs", "url": "/courses" },
+    "highlights": [
+      {
+        "title": "Specialized Programs",
+        "description": "Tailored BHM, MBA & BIT programs that blend theory with real-world skills."
+      },
+      {
+        "title": "Industry Mentorship",
+        "description": "Learn directly from hospitality leaders, business professionals, and IT experts."
+      },
+      {
+        "title": "Global Career Pathways",
+        "description": "Excellent placement support and internship opportunities in leading global companies."
+      }
+    ]
+  },
+
+  "programs": [
+    {
+      "id": "bhm",
+      "name": "Bachelor of Hotel Management",
+      "short_name": "BHM",
+      "level": "Bachelor",
+      "duration": "4 years",
+      "total_semesters": 8,
+      "status": "active",
+      "description": "Industry-aligned BHM program operating under the SCHOTEL model, ensuring practical expertise for global hospitality careers.",
+      "model": "SCHOTEL",
+      "focus_areas": [
+        "Culinary Arts & Food Production",
+        "Food & Beverage Service Management",
+        "Housekeeping Management",
+        "Hospitality Operations",
+        "Event Management",
+        "Front Office Management",
+        "Hotel Operations"
+      ],
+      "target": "Future Hospitality Leaders",
+      "experiential_learning": true,
+      "career_paths": [
+        "Hotel Manager",
+        "Restaurant Manager",
+        "Event Coordinator",
+        "Food & Beverage Manager",
+        "Hospitality Consultant",
+        "Resort Operations Manager"
+      ],
+      "eligibility": "Completion of 10+2 or equivalent with minimum 40% aggregate"
+    },
+    {
+      "id": "mba",
+      "name": "Master of Business Administration",
+      "short_name": "MBA",
+      "level": "Master",
+      "duration": "2 years",
+      "total_semesters": 4,
+      "status": "active",
+      "description": "Engineered to equip students with strategic insights and leadership skills required to succeed in the complex world of modern business.",
+      "focus_areas": [
+        "Business and Management Studies",
+        "Finance",
+        "Marketing Management",
+        "Human Resource Management",
+        "Research Methodology",
+        "Entrepreneurship",
+        "Business Law",
+        "Accounting & Finance"
+      ],
+      "target": "Aspiring Business Executives",
+      "experiential_learning": true,
+      "batches": ["2023", "2024", "2025"],
+      "career_paths": [
+        "Business Executive",
+        "Marketing Manager",
+        "Financial Analyst",
+        "HR Manager",
+        "Entrepreneur",
+        "Management Consultant"
+      ],
+      "eligibility": "Bachelor's degree in any discipline with minimum 50% aggregate"
+    },
+    {
+      "id": "bit",
+      "name": "Bachelor of Information Technology",
+      "short_name": "BIT",
+      "level": "Bachelor",
+      "duration": "3 years",
+      "total_semesters": 6,
+      "status": "coming_soon",
+      "expected_intake": "2026",
+      "affiliation": "Lincoln University College, Malaysia",
+      "description": "The Bachelor of Information Technology program prepares students for in-demand IT careers. Learn to design, manage, and support websites, applications, and network systems across industries such as business, healthcare, education, and government. Students can specialize in network security or mobile and web application development, graduating with practical, job-ready skills.",
+      "overview": "The BIT program at Western Mega College, affiliated with Lincoln University College Malaysia, provides a strong blend of theoretical knowledge and hands-on experience in information technology. Graduates are equipped to solve, support, troubleshoot, and design everything from websites to applications and network systems.",
+      "specializations": [
+        {
+          "name": "Network Administration & Security",
+          "description": "Focus on designing secure networks, ethical hacking, intrusion detection, cryptography, and cyber law."
+        },
+        {
+          "name": "Mobile & Web Application Development",
+          "description": "Focus on building modern web and mobile applications using current frameworks and platforms."
+        }
+      ],
+      "focus_areas": [
+        "Computer Networks & Security",
+        "Programming & Software Development",
+        "Database Management",
+        "Web & Mobile Technologies",
+        "Artificial Intelligence",
+        "Cloud Computing",
+        "Cybersecurity",
+        "Software Engineering"
+      ],
+      "target": "Future Technology Professionals",
+      "experiential_learning": true,
+      "career_paths": [
+        "Software Developer",
+        "Network Administrator",
+        "System Administrator",
+        "Network Security Specialist",
+        "Database Administrator",
+        "Web Developer",
+        "IT Support Engineer",
+        "Cloud Solutions Architect"
+      ],
+      "eligibility": "Completion of 10+2 or equivalent with minimum 40% aggregate or 2.0 CGPA",
+      "curriculum": {
+        "total_credits": 129,
+        "semesters": [
+          {
+            "semester": 1,
+            "total_credits": 23,
+            "subjects": [
+              { "name": "Internet Fundamentals & Applications", "code": "BIT 111", "classification": "Major", "credits": 4 },
+              { "name": "Basic Computer Architecture",          "code": "BIT 112", "classification": "Major", "credits": 4 },
+              { "name": "Business English",                     "code": "BIT 113", "classification": "Compulsory", "credits": 3 },
+              { "name": "Computer Network",                     "code": "BIT 114", "classification": "Major", "credits": 4 },
+              { "name": "C-Programming",                        "code": "BIT 115", "classification": "Major", "credits": 4 },
+              { "name": "Math I",                               "code": "BIT 116", "classification": "Major", "credits": 4 }
+            ]
+          },
+          {
+            "semester": 2,
+            "total_credits": 24,
+            "subjects": [
+              { "name": "Advanced Computer Network",   "code": "BIT 121", "classification": "Major",      "credits": 4 },
+              { "name": "Data Structure & Algorithm",  "code": "BIT 234", "classification": "Major",      "credits": 4 },
+              { "name": "Discrete Mathematics",        "code": "BIT 114", "classification": "Compulsory", "credits": 4 },
+              { "name": "Java Programming",            "code": "BIT 243", "classification": "Major",      "credits": 4 },
+              { "name": "E-Commerce",                  "code": "BIT 232", "classification": "Major",      "credits": 4 },
+              { "name": "Digital Logic",               "code": "BIT 126", "classification": "Major",      "credits": 4 }
+            ]
+          },
+          {
+            "semester": 3,
+            "total_credits": 21,
+            "subjects": [
+              { "name": "Database Management System",  "code": "BIT 231",   "classification": "Major",      "credits": 4 },
+              { "name": "Cyber Security Law & Policy", "code": "CSLPA 232", "classification": "Major",      "credits": 4 },
+              { "name": "Web Technology",              "code": "BIT 233",   "classification": "Compulsory", "credits": 4 },
+              { "name": "System Analysis & Design",   "code": "BIT 123",   "classification": "Major",      "credits": 4 },
+              { "name": "Operating System",            "code": "BIT 235",   "classification": "Major",      "credits": 3 },
+              { "name": "Leadership & Human Relations","code": "BIT 122",   "classification": "Compulsory", "credits": 2 }
+            ]
+          },
+          {
+            "semester": 4,
+            "total_credits": 20,
+            "subjects": [
+              { "name": "Mobile Computing",   "code": "BIT 351", "classification": "Major",      "credits": 4 },
+              { "name": "Multimedia System",  "code": "BIT 364", "classification": "Major",      "credits": 4 },
+              { "name": "Real Time System",   "code": "BIT 352", "classification": "Compulsory", "credits": 4 },
+              { "name": "Software Engineering","code": "BIT 244", "classification": "Major",      "credits": 4 },
+              { "name": "RDBMS with SQL",     "code": "BIT 245", "classification": "Major",      "credits": 4 }
+            ]
+          },
+          {
+            "semester": 5,
+            "total_credits": 23,
+            "subjects": [
+              { "name": "Software Project Management",              "code": "BIT 362", "classification": "Major",      "credits": 4 },
+              { "name": "Social & Professional Issues in Computing","code": "BIT 351", "classification": "Major",      "credits": 3 },
+              { "name": "Artificial Intelligence",                  "code": "BIT 353", "classification": "Compulsory", "credits": 3 },
+              { "name": "Compiler Design & Construction",           "code": "BIT 354", "classification": "Major",      "credits": 4 },
+              { "name": "Project Work",                             "code": "BIT 355", "classification": "Major",      "credits": 6 },
+              { "name": "Business Research Methods",                "code": "BRM 356", "classification": "Major",      "credits": 3 }
+            ]
+          },
+          {
+            "semester": 6,
+            "total_credits": 18,
+            "subjects": [
+              { "name": "Cloud Computing",                              "code": "BIT 361", "classification": "Major",      "credits": 4 },
+              { "name": "Emerging Programming Platforms & Technologies","code": "BIT 362", "classification": "Major",      "credits": 4 },
+              { "name": "WML & WAP Programming",                        "code": "BIT 363", "classification": "Compulsory", "credits": 4 },
+              { "name": "Industrial Training",                          "code": "BIT 365", "classification": "Major",      "credits": 6 }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+
+  "principal": {
+    "name": "Adv. Kishu Sharma",
+    "title": "Principal",
+    "email": "kishusharma@westernmegacollege.edu.np",
+    "phone": "9857070832",
+    "specialization": "Educational Administration & Legal Affairs",
+    "photo": "https://westernmegabackend.e-aribt.com/uploads/Adv. Kishu Sharma Principal-a4cbc4.JPG",
+    "message": {
+      "welcome": "Welcome to Western Mega College (WMC)—a place where your dreams meet incredible opportunities.",
+      "body": "As the Principal, I'm truly proud to lead this lively community filled with passionate educators, driven students, and supportive families, all working together towards a common goal of excellence. For more than a decade, Western Mega College has been a shining example of quality education, grounded in holistic development. We believe that real learning goes beyond just textbooks; it's about nurturing critical thinking, encouraging deep understanding, and instilling ethical values that shape character.",
+      "pathways": {
+        "bhm": "We are revolutionizing hospitality education with SCHOTEL, our industry-aligned BHM program. This dynamic model ensures you gain the practical expertise needed to thrive in a global hospitality environment.",
+        "mba": "Our Master of Business Administration (MBA) program is engineered to equip you with the strategic insights and leadership skills required to succeed in the complex world of modern business.",
+        "bit": "Our upcoming Bachelor of Information Technology (BIT) program, affiliated with Lincoln University College Malaysia, will prepare students for in-demand technology careers across software development, networking, cybersecurity, and beyond."
+      },
+      "quote": "At Western Mega College, we are committed to delivering practical, career-focused education through our MBA, BHM, and soon BIT programs—shaping future leaders in business, hospitality, and technology.",
+      "campus_life": "Your experience here goes well beyond the classroom. We cultivate a vibrant campus life filled with in-class activities, cultural festivals, CSR activities and leadership opportunities.",
+      "closing": "My door is always open! I warmly invite you to come visit our campus, meet our amazing faculty, and discover for yourself what makes the Western Mega College family so unique."
+    }
+  },
+
+  "board_of_directors": [
+    {
+      "name": "Mr. Ramesh Bahadur Thapa",
+      "role": "Chairman",
+      "photo": null,
+      "bio": "A visionary leader with over 25 years of experience in education management and business development in the Lumbini Province."
+    },
+    {
+      "name": "Mrs. Sunita Adhikari",
+      "role": "Vice Chairperson",
+      "photo": null,
+      "bio": "An experienced administrator and advocate for quality higher education in Western Nepal, instrumental in establishing WMC's academic standards."
+    },
+    {
+      "name": "Mr. Dipendra Kumar Shrestha",
+      "role": "Director",
+      "photo": null,
+      "bio": "A hospitality industry veteran with extensive experience in hotel operations and tourism development across Nepal."
+    },
+    {
+      "name": "Mr. Prakash Raj Panta",
+      "role": "Director – Finance",
+      "photo": null,
+      "bio": "A seasoned finance professional who oversees the financial governance and strategic planning of Western Mega College."
+    },
+    {
+      "name": "Dr. Mina Sharma",
+      "role": "Director – Academic Affairs",
+      "photo": null,
+      "bio": "A PhD in Education Management with a passion for curriculum design, faculty development, and academic excellence."
+    }
+  ],
+
+  "faculty": [
+    { "name": "Mr. Prem Pokhrel",           "role": "Exam Coordinator",    "programs": ["BHM", "MBA"],       "email": "prempokhrel@westernmegacollege.edu.np",   "specialization": "Economics",                              "photo": "https://westernmegabackend.e-aribt.com/uploads/Prem_Pokhrel_Exam-Coordinator-ca5734.jpg" },
+    { "name": "Mrs. Kalpana Neupane",        "role": "Student Welfare (SWD)","programs": ["BHM", "MBA"],       "email": "kalpananeupane@westernmegacollege.edu.np","specialization": "Management & Finance",                    "photo": "https://westernmegabackend.e-aribt.com/uploads/KALPANA_NEUPANE_SWD-e40629.JPG" },
+    { "name": "Dr. Bhagwati Prasad Chaudhary","role": "Faculty Member",      "programs": ["MBA", "BHM"],       "email": "bhagwati@westernmegacollege.edu.np",      "specialization": "Business and Management Studies",         "photo": "https://westernmegabackend.e-aribt.com/uploads/Dr.Bhagwati Prasad Chaudhary Photograph.-90c1f5.png" },
+    { "name": "Mr. Lalitman Shrestha",       "role": "Faculty Member",       "programs": ["MBA", "BHM"],       "email": "lalitman@westernmegacollege.edu.np",      "specialization": "Banking and Accountancy",                 "photo": "https://westernmegabackend.e-aribt.com/uploads/Mr.Lalitman Shrestha Photograph.-4a0d3c.jpg" },
+    { "name": "Chef Bikash Khatri Thapa",    "role": "Practical Instructor", "programs": ["BHM"],              "email": "bikash@westernmegacollege.edu.np",        "specialization": "Culinary Arts & Food Production",         "photo": "https://westernmegabackend.e-aribt.com/uploads/chef_bikash khatri thapa-8b633f.jpg" },
+    { "name": "Mr. Kabi Raj Giri",           "role": "Practical Instructor", "programs": ["BHM"],              "email": "kabiraj@westernmegacollege.edu.np",       "specialization": "Hospitality Operations",                  "photo": "https://westernmegabackend.e-aribt.com/uploads/kabiraj giri-b633f3.jpeg" },
+    { "name": "C.A. Prem Subedi",            "role": "Faculty Member",       "programs": ["MBA", "BHM"],       "email": "premsubedi@westernmegacollege.edu.np",    "specialization": "Accounting & Finance",                    "photo": "https://westernmegabackend.e-aribt.com/uploads/C.A.Prem Subedi Photographs-889003.jpeg" },
+    { "name": "Adv. Arjun Kafle",            "role": "Faculty Member",       "programs": ["MBA", "BHM"],       "email": "arjunkafle@westernmegacollege.edu.np",    "specialization": "Legal Studies & Business Law",            "photo": "https://westernmegabackend.e-aribt.com/uploads/Adv.Arjun Kafle Photograph.-cf09b5.png" },
+    { "name": "Er. Ram Prasad Jaishi",       "role": "Faculty Member",       "programs": ["BHM"],              "email": "ramprasad@westernmegacollege.edu.np",     "specialization": "Engineering & Technology",                "photo": "https://westernmegabackend.e-aribt.com/uploads/Er.Ram Prasad Jaishi Photograph.-2c1d40.png" },
+    { "name": "Mr. Narayan Prasad Bhusal",   "role": "Faculty Member",       "programs": ["BHM", "MBA"],       "email": "narayanbhusal@westernmegacollege.edu.np", "specialization": "Information Technology, Database Management","photo": "https://westernmegabackend.e-aribt.com/uploads/Mr.Narayan Prasad Bhusal Photographh.-daf9df.png" },
+    { "name": "Mr. Romnath Sharma",          "role": "Faculty Member",       "programs": ["BHM", "MBA"],       "email": "romnath@westernmegacollege.edu.np",       "specialization": "Academic Studies",                        "photo": "https://westernmegabackend.e-aribt.com/uploads/Mr.Romnath Sharma Photograph-94566f.jpg" },
+    { "name": "Mrs. Suparna Chattergee",     "role": "Faculty Member",       "programs": ["BHM", "MBA"],       "email": "suparna@westernmegacollege.edu.np",       "specialization": "Academic Studies",                        "photo": "https://westernmegabackend.e-aribt.com/uploads/Mrs.Suparna Chattergee Photograph.-0ee981.jpg" },
+    { "name": "Mr. Chudamani Basyal",        "role": "Faculty Member",       "programs": ["BHM"],              "email": "chudamanibasyal@westernmegacollege.edu.np","specialization": "English Communication",                   "photo": "https://westernmegabackend.e-aribt.com/uploads/chudamani basyal-33324e.jpeg" },
+    { "name": "Mr. Suraj Shakya",            "role": "Faculty Member",       "programs": ["BHM", "MBA"],       "email": "surajshakya@westernmegacollege.edu.np",   "specialization": "Research Methodology, Entrepreneurship",  "photo": "https://westernmegabackend.e-aribt.com/uploads/Suraj Shakya-896ca5.jpeg" },
+    { "name": "Mr. Bishnu Neupane",          "role": "Faculty Member",       "programs": ["BHM"],              "email": "bishnuneupane@westernmegacollege.edu.np", "specialization": "Food & Catering, Event Management",       "photo": "https://westernmegabackend.e-aribt.com/uploads/Bishnu Neupane-9ccc71.jpeg" },
+    { "name": "Mr. Sudarshan Kandel",        "role": "Faculty Member",       "programs": ["MBA"],              "email": "sudarshankandel@westernmegacollege.edu.np","specialization": "HRM, Marketing Management",               "photo": "https://westernmegabackend.e-aribt.com/uploads/sudarshan kandel-7f8d90.jpeg" },
+    { "name": "Mr. Rajiv Khanal",            "role": "Faculty Member",       "programs": ["MBA"],              "email": "rajivkhanal@westernmegacollege.edu.np",   "specialization": "Finance",                                 "photo": "https://westernmegabackend.e-aribt.com/uploads/Rajiv Khanal-685e84.jpeg" },
+    { "name": "Mr. Sushil Gyawali",          "role": "Faculty Member",       "programs": ["BHM"],              "email": "sushilgyawali@westernmegacollege.edu.np", "specialization": "Food & Beverage Service Management",      "photo": "https://westernmegabackend.e-aribt.com/uploads/Sushil Gyawali-dd9add.jpg" },
+    { "name": "Mr. Sangyat Shrestha",        "role": "Faculty Member",       "programs": ["BHM"],              "email": "Sangyatshrestha@westernmegacollege.edu.np","specialization": "Housekeeping Management",                 "photo": "https://westernmegabackend.e-aribt.com/uploads/Sangyat Shresthaa-3ceb01.jpg" },
+    { "name": "Mr. Krishna Bhattarai",       "role": "Faculty Member",       "programs": ["MBA"],              "email": "krishnabhattarai@westernmegacollege.edu.np","specialization": "Marketing",                              "photo": "https://westernmegabackend.e-aribt.com/uploads/Krishna Bhattarai-bcb9dd.jpeg" }
+  ],
+
+  "staff": [
+    { "name": "Ms. Usha Kharel",       "role": "Account Assistant", "email": "account@westernmegacollege.edu.np",  "photo": "https://westernmegabackend.e-aribt.com/uploads/USHA_ACCOUNT_ASSISTANT-6fa109.JPG" },
+    { "name": "Ms. Aliza Bajracharya", "role": "Librarian",         "email": "WMCLIBRARY@westernmegacollege.edu.np","photo": "https://westernmegabackend.e-aribt.com/uploads/ALIZA_BAJRACHARYA_LIBRARIAN-eb726a.JPG" },
+    { "name": "Ms. Bishakha Aryal",    "role": "Receptionist",      "email": "WMCRECEPTION@westernmegacollege.edu.np","photo": "https://westernmegabackend.e-aribt.com/uploads/Bishaka Aryal-42f8b1.jpeg" },
+    { "name": "Mr. Shan Thapa",        "role": "Chief Accountant",  "email": "resort.arambha11@gmail.com",         "photo": "https://westernmegabackend.e-aribt.com/uploads/Shan_Thapa-42b981.jpeg" },
+    { "name": "Ms. Prashamsha Shakya", "role": "Accountant",        "email": "account@westernmegacollege.edu.np",  "photo": "https://westernmegabackend.e-aribt.com/uploads/PRASANSHA_CHIEF_ACCOUNTANT-fcec4d.JPG" }
+  ],
+
+  "blogs": [
+    {
+      "id": "blog-1",
+      "title": "Established Legacy – Annual Hospitality Festival",
+      "slug": "established-legacy-annual-hospitality-festival",
+      "category": "Academic",
+      "author": "Kisan Mahat",
+      "date": "2025-08-13",
+      "featured": true,
+      "thumbnail": "https://westernmegabackend.e-aribt.com/uploads/western event ticket-e5f66a.png",
+      "tags": ["food festival", "BHM", "events"],
+      "summary": "Western Mega College's BHM students successfully organized the Annual Hospitality Festival, a three-day event showcasing exceptional skills and talents in hospitality management.",
+      "highlights": [
+        "Culinary Arts Competition – gourmet dishes judged by professional chefs",
+        "Event Management Showcase – live demonstration of event planning",
+        "Hotel Operations Simulation – real-time hotel management scenarios",
+        "Customer Service Excellence Workshop",
+        "Food & Beverage Service Competition"
+      ],
+      "outcome": "Over 200 industry professionals attended. Several students received job offers from attending industry representatives."
+    },
+    {
+      "id": "blog-2",
+      "title": "Trek to Kenjing Gumba: Cultural & Educational Expedition",
+      "slug": "trek-kenjing-gumba-dec-2021",
+      "category": "Adventure",
+      "author": "Western Mega College",
+      "date": "2021-12-06",
+      "featured": false,
+      "thumbnail": "https://westernmegabackend.e-aribt.com/uploads/265953756_2738125833000588_4772341212623859313_n-1536x1152-09f174.jpg",
+      "tags": ["trek", "cultural", "BHM", "experiential learning"],
+      "summary": "6th-semester BHM students undertook an eight-day trek to Kenjing Gumba in Chitlang, blending cultural exploration, academic enrichment, and physical challenge.",
+      "highlights": [
+        "Days 1-2: Cultural immersion through authentic local homestays",
+        "Days 3-4: Educational visits to traditional goat cheese production facilities",
+        "Days 5-6: Learning about wine processing from local artisan producers",
+        "Days 7-8: Spiritual exploration at historic Kenjing Gumba monastery"
+      ]
+    },
+    {
+      "id": "blog-3",
+      "title": "Industrial Visit – CG Unnati Cultural Village, Chitwan",
+      "slug": "industrial-visit-cg-unnati-cultural-village",
+      "category": "Adventure",
+      "author": "Western Mega College",
+      "date": "2021-12-12",
+      "featured": false,
+      "thumbnail": "https://westernmegabackend.e-aribt.com/uploads/267593289_1077396386412802_3633348452218638298_n-2c8120.jpg",
+      "tags": ["industrial visit", "cultural village", "BHM", "community tourism"],
+      "summary": "2nd-semester BHM students visited Unnati Cultural Village in Harkapur, Chitwan for an in-depth experience in cultural heritage preservation and community-driven tourism.",
+      "highlights": [
+        "Seminars on cultural heritage preservation",
+        "Traditional Tharu hospitality practices",
+        "Art & craft workshops: pottery, weaving, natural dye making, wood carving",
+        "Community-based tourism model insights"
+      ]
+    },
+    {
+      "id": "blog-4",
+      "title": "Academic Visit to Chitlang: Wine, Cheese & Community Homestay",
+      "slug": "academic-visit-chitlang",
+      "category": "Academic",
+      "author": "Western Mega College",
+      "date": "2021-12-17",
+      "featured": false,
+      "thumbnail": "https://westernmegabackend.e-aribt.com/uploads/261393449_1353180225119447_3178589903578193490_n-1536x1152-ad36b1.jpg",
+      "tags": ["industrial visit", "wine", "cheese", "homestay", "BHM"],
+      "summary": "4th-semester BHM students visited Chitlang to experience real-world wine processing, artisanal goat cheese production, and community homestay operations."
+    },
+    {
+      "id": "blog-5",
+      "title": "Two-Day Academic Workshop on Research & Publication",
+      "slug": "academic-workshop-research-publication-2025",
+      "category": "Academic",
+      "author": "Western Mega College",
+      "date": "2025-08-01",
+      "featured": false,
+      "thumbnail": "https://westernmegabackend.e-aribt.com/uploads/mba workshop grup photo-4e605e.jpeg",
+      "tags": ["MBA", "research", "workshop", "publication"],
+      "summary": "A two-day academic workshop titled 'Case Analysis, Research Article Writing & Publication' was held on August 1-2, 2025, for MBA students from batches 2023, 2024, and 2025.",
+      "resource_person": { "name": "Mr. Lal B. Pun", "qualifications": "PhD Scholar, M.Phil., Gold Medalist" },
+      "topics_covered": [
+        "Academic research methodologies",
+        "Real-world case study analysis",
+        "Developing compelling research articles",
+        "Topic selection and article organization",
+        "Navigating journal publication"
+      ]
+    },
+    {
+      "id": "blog-6",
+      "title": "WMC Announces Upcoming BIT Program Affiliated with Lincoln University College",
+      "slug": "wmc-announces-bit-program",
+      "category": "Academic",
+      "author": "Western Mega College",
+      "date": "2025-09-01",
+      "featured": false,
+      "thumbnail": null,
+      "tags": ["BIT", "technology", "new program", "Lincoln University"],
+      "summary": "Western Mega College officially announces the upcoming launch of the Bachelor of Information Technology (BIT) program, affiliated with Lincoln University College, Malaysia, with first intake expected in 2026.",
+      "highlights": [
+        "3-year, 6-semester program affiliated with Lincoln University College Malaysia",
+        "Specializations in Network Security and Mobile & Web Development",
+        "Curriculum includes AI, Cloud Computing, Cybersecurity, and Software Engineering",
+        "Industrial training embedded in the final semester"
+      ]
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event-1",
+      "title": "Annual Hospitality Festival 2025",
+      "date": "2025-08-13",
+      "type": "Annual Event",
+      "description": "A three-day showcase event where BHM students demonstrate their hospitality, culinary, and event management skills in front of over 200 industry professionals.",
+      "status": "completed",
+      "thumbnail": "https://westernmegabackend.e-aribt.com/uploads/western event ticket-e5f66a.png"
+    },
+    {
+      "id": "event-2",
+      "title": "MBA Research & Publication Workshop",
+      "date": "2025-08-01",
+      "type": "Academic Workshop",
+      "description": "A two-day intensive workshop for MBA students covering case analysis, research article writing, and academic journal publication.",
+      "status": "completed",
+      "thumbnail": "https://westernmegabackend.e-aribt.com/uploads/mba workshop grup photo-4e605e.jpeg"
+    },
+    {
+      "id": "event-3",
+      "title": "Open Day & Campus Tour 2025",
+      "date": "2025-10-15",
+      "type": "Admission Event",
+      "description": "Prospective students and families are invited to tour the campus, interact with faculty, and learn about BHM, MBA, and the upcoming BIT programs.",
+      "status": "upcoming",
+      "thumbnail": null
+    },
+    {
+      "id": "event-4",
+      "title": "Industry Interaction & Career Fair 2025",
+      "date": "2025-11-20",
+      "type": "Career Event",
+      "description": "Top hospitality and business companies visit campus to interact with students, conduct interviews, and offer internship and placement opportunities.",
+      "status": "upcoming",
+      "thumbnail": null
+    },
+    {
+      "id": "event-5",
+      "title": "Freshers' Welcome Ceremony 2025",
+      "date": "2025-09-10",
+      "type": "Cultural Event",
+      "description": "Annual welcome ceremony for new students featuring cultural performances, faculty introductions, and student orientation.",
+      "status": "completed",
+      "thumbnail": null
+    }
+  ],
+
+  "gallery": [
+    {
+      "id": "gallery-1",
+      "title": "Annual Hospitality Festival",
+      "category": "Events",
+      "images": [
+        { "url": "https://westernmegabackend.e-aribt.com/uploads/western event ticket-e5f66a.png", "caption": "Annual Hospitality Festival 2025" }
+      ]
+    },
+    {
+      "id": "gallery-2",
+      "title": "MBA Workshop – Research & Publication",
+      "category": "Academic",
+      "images": [
+        { "url": "https://westernmegabackend.e-aribt.com/uploads/mba workshop grup photo-4e605e.jpeg", "caption": "MBA students at the Research & Publication Workshop, August 2025" }
+      ]
+    },
+    {
+      "id": "gallery-3",
+      "title": "Trek to Kenjing Gumba",
+      "category": "Adventure",
+      "images": [
+        { "url": "https://westernmegabackend.e-aribt.com/uploads/265953756_2738125833000588_4772341212623859313_n-1536x1152-09f174.jpg", "caption": "6th Semester BHM students at Kenjing Gumba Trek, December 2021" }
+      ]
+    },
+    {
+      "id": "gallery-4",
+      "title": "Industrial Visit – Unnati Cultural Village",
+      "category": "Industrial Visit",
+      "images": [
+        { "url": "https://westernmegabackend.e-aribt.com/uploads/267593289_1077396386412802_3633348452218638298_n-2c8120.jpg", "caption": "BHM students at Unnati Cultural Village, Chitwan" }
+      ]
+    },
+    {
+      "id": "gallery-5",
+      "title": "Academic Visit – Chitlang",
+      "category": "Industrial Visit",
+      "images": [
+        { "url": "https://westernmegabackend.e-aribt.com/uploads/261393449_1353180225119447_3178589903578193490_n-1536x1152-ad36b1.jpg", "caption": "4th Semester BHM students at Chitlang homestay and wine processing visit" }
+      ]
+    }
+  ],
+
+  "alumni_testimonials": [
+    {
+      "id": "testimonial-1",
+      "name": "Anish Karki",
+      "program": "BHM",
+      "batch": "2019",
+      "current_role": "Front Office Manager",
+      "company": "Hyatt Regency, Kathmandu",
+      "photo": null,
+      "quote": "Western Mega College gave me the practical foundation I needed to excel in the hospitality industry. The hands-on learning approach and industry visits made all the difference in my career."
+    },
+    {
+      "id": "testimonial-2",
+      "name": "Srijana Thapa",
+      "program": "MBA",
+      "batch": "2021",
+      "current_role": "Business Development Manager",
+      "company": "Ncell Pvt. Ltd.",
+      "photo": null,
+      "quote": "The MBA program at WMC was transformative. The faculty brings real industry insight into the classroom, and the research workshop gave me skills that directly helped in my professional career."
+    },
+    {
+      "id": "testimonial-3",
+      "name": "Rohan Shrestha",
+      "program": "BHM",
+      "batch": "2020",
+      "current_role": "F&B Supervisor",
+      "company": "Marriott International, Dubai",
+      "photo": null,
+      "quote": "Thanks to WMC's SCHOTEL model and practical training, I was fully industry-ready when I stepped into my first international role. I am proud to be a WMC alumnus."
+    },
+    {
+      "id": "testimonial-4",
+      "name": "Priya Gurung",
+      "program": "MBA",
+      "batch": "2022",
+      "current_role": "Marketing Executive",
+      "company": "Himalayan Bank Ltd.",
+      "photo": null,
+      "quote": "WMC's MBA program provided me with a solid understanding of marketing and finance. The support from faculty and the exposure to real business cases made my transition into the corporate world seamless."
+    }
+  ],
+
+  "corporate_partners": [
+    { "name": "Hyatt Regency",        "sector": "Hospitality",           "type": "Placement & Internship Partner", "logo": null },
+    { "name": "Marriott International","sector": "Hospitality",           "type": "Placement Partner",              "logo": null },
+    { "name": "Radisson Hotel Group", "sector": "Hospitality",           "type": "Internship Partner",             "logo": null },
+    { "name": "Himalayan Bank Ltd.",  "sector": "Banking & Finance",     "type": "Placement Partner",              "logo": null },
+    { "name": "Ncell Pvt. Ltd.",      "sector": "Telecommunications",    "type": "Placement Partner",              "logo": null },
+    { "name": "Aramba Resort",        "sector": "Hospitality",           "type": "On-Campus Training Partner",     "logo": null }
+  ],
+
+  "faqs": [
+    { "id": "faq-1",  "question": "What programs does Western Mega College offer?",           "answer": "Western Mega College currently offers Bachelor of Hotel Management (BHM) and Master of Business Administration (MBA), both affiliated with Lincoln University College, Malaysia. The Bachelor of Information Technology (BIT) program is coming soon with expected intake in 2026.", "category": "Programs" },
+    { "id": "faq-2",  "question": "What is the duration of the BHM program?",                "answer": "The BHM program is a 4-year program divided into 8 semesters.", "category": "Programs" },
+    { "id": "faq-3",  "question": "What is the duration of the MBA program?",                "answer": "The MBA program is a 2-year program divided into 4 semesters.", "category": "Programs" },
+    { "id": "faq-4",  "question": "What is the duration of the BIT program?",                "answer": "The upcoming BIT program will be a 3-year program divided into 6 semesters, affiliated with Lincoln University College, Malaysia.", "category": "Programs" },
+    { "id": "faq-5",  "question": "What are the eligibility criteria for BHM?",              "answer": "Applicants must have completed 10+2 or equivalent with a minimum aggregate of 40%.", "category": "Admission" },
+    { "id": "faq-6",  "question": "What are the eligibility criteria for MBA?",              "answer": "Applicants must hold a Bachelor's degree in any discipline with a minimum aggregate of 50%.", "category": "Admission" },
+    { "id": "faq-7",  "question": "What are the eligibility criteria for BIT?",              "answer": "Applicants must have completed 10+2 or equivalent with a minimum of 40% aggregate or 2.0 CGPA.", "category": "Admission" },
+    { "id": "faq-8",  "question": "How can I apply for admission?",                          "answer": "You can apply online through our website's Admission page, or visit the college campus. Contact us at 9857071252 or info@westernmegacollege.edu.np for guidance.", "category": "Admission" },
+    { "id": "faq-9",  "question": "Does WMC provide placement support?",                     "answer": "Yes. WMC has strong industry connections with leading hospitality and business organizations both in Nepal and internationally, providing internship placements and job placement support.", "category": "Career" },
+    { "id": "faq-10", "question": "Is Western Mega College affiliated with a foreign university?", "answer": "Yes. WMC is affiliated with Lincoln University College, Malaysia — a globally recognized institution. Degrees carry the credential of Lincoln University College.", "category": "General" },
+    { "id": "faq-11", "question": "Where is Western Mega College located?",                  "answer": "WMC is located in Dhawaha, Butwal, Lumbini Province, Nepal — within the Aramba Resort complex. Contact: 071422131/132/134.", "category": "General" },
+    { "id": "faq-12", "question": "What specializations are available in the BIT program?",  "answer": "The BIT program offers two specializations: Network Administration & Security (covering ethical hacking, cryptography, cyber law) and Mobile & Web Application Development.", "category": "Programs" }
+  ],
+
+  "admission": {
+    "status": "open",
+    "banner": "Admissions Open for BHM & MBA Programs – Intake 2025",
+    "note": "Please keep checking the website for up-to-date information about admission dates and procedures. BIT admissions will open in 2026.",
+    "contact": {
+      "phone": ["071422131", "071422132", "071422134", "9857071252", "9857070832"],
+      "email": "info@westernmegacollege.edu.np"
+    },
+    "form_fields": {
+      "personal": ["First Name", "Middle Name", "Last Name", "Email Address", "Contact Number", "Date of Birth (AD)", "Religion", "Marital Status", "Program Interested In"],
+      "program_options": ["BHM", "MBA", "BIT (Coming Soon)"],
+      "religion_options": ["Hinduism", "Buddhism", "Christianity", "Islam", "Other"],
+      "marital_status_options": ["Single", "Married", "Divorced", "Widowed"],
+      "address": ["Province", "District", "VDC/Municipality", "Ward No."],
+      "provinces": ["Province 1", "Madhesh", "Bagmati", "Gandaki", "Lumbini", "Karnali", "Sudurpashchim"],
+      "guardian": ["Father Name", "Father Occupation", "Father Phone Number", "Mother Name", "Mother Occupation", "Mother Phone Number"],
+      "documents": ["Academic Documents (upload)"]
+    }
+  },
+
+  "value_propositions": [
+    { "title": "Specialized Programs",       "description": "Tailored BHM, MBA & BIT programs that blend theory with real-world skills in hospitality, business, and technology." },
+    { "title": "Industry Mentorship",        "description": "Learn directly from hospitality leaders, business professionals, and IT experts." },
+    { "title": "Global Career Pathways",     "description": "Excellent placement support and internship opportunities in leading global companies." },
+    { "title": "Experiential Learning",      "description": "Industrial visits, treks, cultural expeditions, and workshops form a core part of the curriculum." },
+    { "title": "Decade-Strong Legacy",       "description": "Over 10 years of quality education with a strong alumni network and impressive placement record." },
+    { "title": "International Affiliation",  "description": "Affiliated with Lincoln University College, Malaysia — ensuring globally recognized degrees." }
+  ],
+
+  "campus_life": {
+    "activities": [
+      "In-class activities", "Cultural festivals", "CSR activities",
+      "Leadership opportunities", "Industrial visits", "Adventure treks",
+      "Research workshops", "Sports & recreation", "Student clubs",
+      "Community outreach programs"
+    ]
+  },
+
+  "seo": {
+    "meta_description": "Western Mega College – Premier institution in Butwal offering BHM, MBA, and upcoming BIT programs affiliated with Lincoln University College, Malaysia. Shaping future leaders in hospitality, business, and technology since 2013.",
+    "keywords": [
+      "Western Mega College", "BHM college Nepal", "MBA college Butwal",
+      "BIT college Nepal", "Hotel Management Nepal", "Bachelor of Hotel Management",
+      "Master of Business Administration", "Bachelor of Information Technology",
+      "Lincoln University College Nepal", "hospitality education Nepal",
+      "management college Lumbini", "IT college Butwal"
+    ]
+  },
+
+  "media": {
+    "logo": "https://westernmegacollege.edu.np/_next/static/media/logo.5a59ae59.png",
+    "lincoln_logo": "https://westernmegacollege.edu.np/_next/static/media/lincon.fd098be9.png",
+    "home_banner": "https://westernmegabackend.e-aribt.com/uploads/DSC08110-ecc0b7.JPG",
+    "backend_base_url": "https://westernmegabackend.e-aribt.com"
+  },
+
+  "pages": {
+    "home": "/",
+    "about": "/aboutus",
+    "courses": "/courses",
+    "principal": "/principals",
+    "board_of_directors": "/bod",
+    "faculty": "/faculty",
+    "staff": "/staff",
+    "gallery": "/Gallery",
+    "blog": "/blogs",
+    "events": "/event",
+    "admission": "/Admission",
+    "contact": "/contactus"
+  }
+}
