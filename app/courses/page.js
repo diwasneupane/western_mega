@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Clock, BookOpen, Users, GraduationCap, Briefcase, Cpu } from "lucide-react";
+import { ArrowRight, CheckCircle, Clock, BookOpen, Users, GraduationCap, Briefcase, Cpu, Shield } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
 import data from "@/lib/data";
 
 const { programs } = data;
-const ICONS = { bhm: GraduationCap, mba: Briefcase, bit: Cpu };
+const ICONS = { bhm: GraduationCap, mba: Briefcase, bba: Briefcase, bcs: Shield, bit: Cpu };
 
 export const metadata = {
-  title: "Programs – BHM, MBA & BIT | Western Mega College",
-  description: "Explore WMC's BHM, MBA, and BIT programs affiliated with Lincoln University College, Malaysia.",
+  title: "Programs – BHM, MBA, BBA, BCS & BIT | Western Mega College",
+  description: "Explore WMC's programs: BHM, MBA, BBA, BCS, and BIT affiliated with Lincoln University College, Malaysia.",
 };
 
 export default function CoursesPage() {
@@ -46,7 +46,7 @@ export default function CoursesPage() {
                     {[
                       { icon: Clock,   label:"Duration",   value: prog.duration },
                       { icon: BookOpen,label:"Semesters",  value: prog.total_semesters },
-                      { icon: Users,   label:"Target",     value: prog.target.split(" ").slice(0,2).join(" ") },
+                      { icon: Users,   label:"Target",     value: prog.target?.split(" ").slice(0,2).join(" ") },
                     ].map((s) => (
                       <div key={s.label} className="rounded-xl p-3 text-center border" style={{ background:"var(--color-surface)", borderColor:"var(--color-border)" }}>
                         <s.icon className="w-4 h-4 mx-auto mb-1.5" style={{ color:"var(--color-blue)" }} />

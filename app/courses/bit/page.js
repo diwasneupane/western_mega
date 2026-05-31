@@ -1,26 +1,85 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Clock, BookOpen, Cpu, Shield, Globe, Star } from "lucide-react";
+import { ArrowRight, CheckCircle, Clock, BookOpen, Users, Cpu, Shield, Star } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
+import SemesterTable from "@/components/curriculum/SemesterTable";
 import data from "@/lib/data";
+
+const BIT_SEMESTERS = [
+  { sem: "Semester 1", total_credits: 16, subjects: [
+    { code: "ENG I",    name: "Business English",                                 credits: 3 },
+    { code: "BIT 6023", name: "Principles of Information Technology",             credits: 3 },
+    { code: "BIT 6044", name: "Introduction to C++ Programming",                  credits: 4 },
+    { code: "BIT 6033", name: "Computer Related Mathematics and Statistics",       credits: 3 },
+    { code: "BIT 6013", name: "Basic Computer Architecture",                      credits: 3 },
+  ]},
+  { sem: "Semester 2", total_credits: 15, subjects: [
+    { code: "BIT 6133", name: "Human Computer Interaction",                       credits: 3 },
+    { code: "BIT 6063", name: "Discrete Mathematics",                             credits: 3 },
+    { code: "BIT 6113", name: "Data Communication and Networks",                  credits: 3 },
+    { code: "BIT 6083", name: "Object Oriented Programming",                      credits: 3 },
+    { code: "BIT 6053", name: "Operating Systems",                                credits: 3 },
+  ]},
+  { sem: "Semester 3", total_credits: 20, subjects: [
+    { code: "BIT 6193", name: "Digital Electronics and Logic Design",             credits: 3 },
+    { code: "BIT 6153", name: "Data Structure & Algorithm",                       credits: 3 },
+    { code: "BIT 6223", name: "Industrial Management",                            credits: 3 },
+    { code: "BIT 6124", name: "Web Technology",                                   credits: 4 },
+    { code: "BIT 6304", name: "Linux Administration",                             credits: 4 },
+    { code: "BIT 6093", name: "Database Management System",                       credits: 3 },
+  ]},
+  { sem: "Semester 4", total_credits: 20, subjects: [
+    { code: "BIT 6103", name: "Visual Programming",                               credits: 3 },
+    { code: "BIT 6233", name: "System Analysis and Design",                       credits: 3 },
+    { code: "BIT 6183", name: "Organizational Behaviour",                         credits: 3 },
+    { code: "BIT 6143", name: "Information Systems Security",                     credits: 3 },
+    { code: "BIT 6144", name: "CMS Based E-Commerce",                             credits: 4 },
+    { code: "BIT 6264", name: "Artificial Intelligence",                          credits: 4 },
+  ]},
+  { sem: "Semester 5", total_credits: 18, subjects: [
+    { code: "MPU 3232", name: "Human Relations and Leadership Skills",            credits: 2 },
+    { code: "BIT 6273", name: "Cyber Security Law & Policy Analysis",             credits: 3 },
+    { code: "BIT 6163", name: "Cryptography & Network Security",                  credits: 3 },
+    { code: "BIT 6213", name: "Multimedia Systems",                               credits: 3 },
+    { code: "BIT 6254", name: "Server-Side Programming",                          credits: 4 },
+    { code: "BIT 6073", name: "Values & Ethics in Profession",                    credits: 3 },
+  ]},
+  { sem: "Semester 6", total_credits: 17, subjects: [
+    { code: "BIT 6293", name: "Research Methodology",                             credits: 4 },
+    { code: "BIT 6294", name: "Android Programming",                              credits: 4 },
+    { code: "BIT 6243", name: "Project Management",                               credits: 3 },
+    { code: "BIT 6173", name: "Management Information System",                    credits: 3 },
+    { code: "BIT 6203", name: "System Administration and Maintenance",            credits: 3 },
+  ]},
+  { sem: "Semester 7 · Final Year Project", total_credits: 6, subjects: [
+    { code: "BIT 6286", name: "Final Year Project",                               credits: 6 },
+  ]},
+  { sem: "Semester 8 · Industrial Training", total_credits: 8, subjects: [
+    { code: "BIT 6318", name: "Industrial Training",                              credits: 8 },
+  ]},
+];
+
+const ACCENT = {
+  ring: "border-emerald-200",
+  bg:   "bg-emerald-50",
+  text: "text-emerald-700",
+  badge:"bg-emerald-100 text-emerald-700",
+};
 
 const prog = data.programs.find((p) => p.id === "bit");
 
 export const metadata = {
-  title: "Bachelor of Information Technology (BIT) – Western Mega College",
-  description: "Upcoming BIT program (2026) at WMC Butwal, affiliated with Lincoln University College Malaysia. Network Security and Mobile & Web Development.",
+  title: "Bachelor of Information Technology (Hons) – Western Mega College",
+  description: "4-year BIT program at WMC Butwal, affiliated with Lincoln University College Malaysia. Network Security and Mobile & Web Development.",
 };
 
 export default function BITPage() {
-  const { curriculum } = prog;
-
   return (
     <>
       <div className="page-hero" style={{ position: "relative" }}>
-        {/* Faded technology background */}
         <div className="absolute inset-0" style={{ zIndex: 0 }}>
           <Image
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80"
+            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600&q=80"
             alt="" fill className="object-cover object-center" unoptimized priority
           />
           <div className="absolute inset-0" style={{ background: "rgba(255,255,255,0.88)" }} />
@@ -32,25 +91,25 @@ export default function BITPage() {
           </div>
           <div className="flex flex-wrap items-center gap-2 mb-4">
             <span className="badge badge-gold">Bachelor's Degree</span>
-            <span className="badge badge-gray">Coming 2026</span>
+            <span className="badge badge-green">Now Enrolling</span>
           </div>
           <h1 className="font-serif text-4xl md:text-5xl font-bold page-hero-title mb-3" style={{ letterSpacing:"-0.02em" }}>{prog.name}</h1>
-          <p className="page-hero-sub">{prog.description.slice(0, 180)}...</p>
+          <p className="page-hero-sub">{prog.description}</p>
         </div>
       </div>
 
       <div style={{ background:"var(--color-surface)", borderBottom:"1px solid var(--color-border)" }}>
         <div className="container py-5 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { icon: Clock,   label:"Duration",      value: prog.duration },
-            { icon: BookOpen,label:"Semesters",     value: `${prog.total_semesters} Semesters` },
-            { icon: BookOpen,label:"Total Credits",  value: `${curriculum.total_credits} Credits` },
-            { icon: Clock,   label:"First Intake",  value: prog.expected_intake },
+            { icon: Clock,   label:"Duration",     value: prog.duration },
+            { icon: BookOpen,label:"Semesters",    value: `${prog.total_semesters} Semesters` },
+            { icon: Cpu,     label:"Affiliation",  value: "Lincoln University College" },
+            { icon: Shield,  label:"Total Credits",value: `${prog.total_credits} Credits` },
           ].map((s) => (
             <div key={s.label} className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
-                style={{ background:"var(--color-blue-50)", border:"1px solid var(--color-blue-100)" }}>
-                <s.icon className="w-4 h-4" style={{ color:"var(--color-blue)" }} />
+                style={{ background:"#ECFDF5", border:"1px solid #A7F3D0" }}>
+                <s.icon className="w-4 h-4" style={{ color:"#059669" }} />
               </div>
               <div>
                 <p className="text-xs" style={{ color:"var(--color-muted)" }}>{s.label}</p>
@@ -66,31 +125,31 @@ export default function BITPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <span className="page-hero-eyebrow">Program Overview</span>
-              <h2 className="font-serif text-2xl font-bold mb-4" style={{ color:"var(--color-ink)", letterSpacing:"-0.02em" }}>Preparing Technology Professionals of Tomorrow</h2>
-              <p className="leading-relaxed mb-4 text-[0.9375rem]" style={{ color:"var(--color-muted)" }}>{prog.overview}</p>
+              <h2 className="font-serif text-2xl font-bold mb-4" style={{ color:"var(--color-ink)", letterSpacing:"-0.02em" }}>Build, Secure & Innovate with Technology</h2>
+              <p className="leading-relaxed mb-4 text-[0.9375rem]" style={{ color:"var(--color-muted)" }}>
+                {prog.overview}
+              </p>
+              <p className="leading-relaxed mb-6 text-[0.9375rem]" style={{ color:"var(--color-muted)" }}>
+                The 4-year, 8-semester curriculum provides deep expertise in programming, networking, cybersecurity, databases, and web technologies — capped with a final year project and industrial training that bridges classroom learning with real-world application.
+              </p>
 
-              <h3 className="font-serif font-bold text-lg mb-4 mt-8" style={{ color:"var(--color-ink)" }}>Specializations</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                {prog.specializations.map((spec) => (
-                  <div key={spec.name} className="rounded-xl p-5 border"
-                    style={{ background:"var(--color-surface)", borderColor:"var(--color-border)" }}>
-                    <div className="w-9 h-9 rounded-lg flex items-center justify-center mb-3"
-                      style={{ background:"var(--color-blue-50)", border:"1px solid var(--color-blue-100)" }}>
-                      {spec.name.includes("Security")
-                        ? <Shield className="w-5 h-5" style={{ color:"var(--color-blue)" }} />
-                        : <Globe className="w-5 h-5" style={{ color:"var(--color-blue)" }} />}
+              {prog.specializations && (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                  {prog.specializations.map((sp) => (
+                    <div key={sp.name} className="p-4 rounded-xl border"
+                      style={{ background:"#ECFDF5", borderColor:"#A7F3D0" }}>
+                      <h4 className="font-semibold text-sm mb-1.5" style={{ color:"#059669" }}>{sp.name}</h4>
+                      <p className="text-xs leading-relaxed" style={{ color:"var(--color-muted)" }}>{sp.description}</p>
                     </div>
-                    <h4 className="font-semibold text-sm mb-2" style={{ color:"var(--color-ink)" }}>{spec.name}</h4>
-                    <p className="text-xs leading-relaxed" style={{ color:"var(--color-muted)" }}>{spec.description}</p>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )}
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
                 {prog.focus_areas.map((fa) => (
                   <div key={fa} className="flex items-center gap-2.5 p-3 rounded-xl"
                     style={{ background:"var(--color-surface)", border:"1px solid var(--color-border)" }}>
-                    <CheckCircle className="w-4 h-4 shrink-0" style={{ color:"var(--color-blue)" }} />
+                    <CheckCircle className="w-4 h-4 shrink-0" style={{ color:"#059669" }} />
                     <span className="text-sm font-medium" style={{ color:"var(--color-ink)" }}>{fa}</span>
                   </div>
                 ))}
@@ -108,19 +167,14 @@ export default function BITPage() {
                 <ul className="space-y-3 mb-6">
                   {prog.career_paths.map((cp) => (
                     <li key={cp} className="flex items-center gap-2.5 text-sm" style={{ color:"var(--color-ink)" }}>
-                      <Star className="w-3.5 h-3.5 shrink-0 fill-current" style={{ color:"var(--color-blue)" }} />
+                      <Star className="w-3.5 h-3.5 shrink-0 fill-current" style={{ color:"#059669" }} />
                       {cp}
                     </li>
                   ))}
                 </ul>
-                <div className="pt-5 border-t" style={{ borderColor:"var(--color-border)" }}>
-                  <div className="p-4 rounded-xl mb-4 text-sm border"
-                    style={{ background:"rgba(5,150,105,0.05)", borderColor:"rgba(5,150,105,0.2)", color:"#166534" }}>
-                    BIT intake expected <strong>2026</strong>. Register interest to be notified.
-                  </div>
-                  <Link href="/contact" className="btn-primary w-full justify-center">
-                    Register Interest <ArrowRight className="w-4 h-4" />
-                  </Link>
+                <div className="pt-5 border-t space-y-2" style={{ borderColor:"var(--color-border)" }}>
+                  <Link href="/admission" className="btn-primary w-full justify-center" style={{ background:"#059669", borderColor:"#059669" }}>Apply for BIT <ArrowRight className="w-4 h-4" /></Link>
+                  <Link href="/contact" className="btn-outline-soft w-full justify-center">Enquire Now</Link>
                 </div>
               </div>
             </div>
@@ -128,48 +182,44 @@ export default function BITPage() {
         </div>
       </section>
 
-      {/* Curriculum */}
-      <section className="section" style={{ background:"var(--color-surface)" }}>
+      <section className="section" style={{ background:"var(--color-navy)" }}>
         <div className="container">
-          <SectionHeader eyebrow="Curriculum" title="Semester-Wise Course Structure" subtitle={`Complete ${curriculum.total_credits}-credit program over 6 semesters`} />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {curriculum.semesters.map((sem) => (
-              <div key={sem.semester} className="bg-white rounded-2xl border overflow-hidden"
-                style={{ borderColor:"var(--color-border)" }}>
-                <div className="px-5 py-4 flex items-center justify-between"
-                  style={{ background:"var(--color-navy)" }}>
-                  <h3 className="font-serif font-bold text-white text-sm">Semester {sem.semester}</h3>
-                  <span className="badge" style={{ background:"rgba(217,119,6,0.25)", color:"var(--color-gold-400)", border:"1px solid rgba(217,119,6,0.3)", fontSize:"0.6875rem" }}>
-                    {sem.total_credits} Credits
-                  </span>
-                </div>
-                <div className="divide-y" style={{ borderColor:"var(--color-border)" }}>
-                  {sem.subjects.map((sub) => (
-                    <div key={sub.code} className="px-5 py-3">
-                      <div className="flex items-start justify-between gap-2">
-                        <div>
-                          <p className="text-sm font-medium leading-tight" style={{ color:"var(--color-ink)" }}>{sub.name}</p>
-                          <p className="text-xs mt-0.5" style={{ color:"var(--color-muted)" }}>{sub.code}</p>
-                        </div>
-                        <div className="text-right shrink-0">
-                          <p className="text-xs font-bold" style={{ color:"var(--color-blue)" }}>{sub.credits} Cr</p>
-                          <p className="text-[10px] mt-0.5" style={{ color:"var(--color-muted)" }}>{sub.classification}</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+          <SectionHeader eyebrow="Curriculum Highlights" title="What You Will Learn" light />
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { title:"Programming",         desc:"Master C++, Object-Oriented Programming, Visual Programming, Server-Side, and Android development." },
+              { title:"Networking & Security",desc:"Learn data communication, cryptography, network security, and cybersecurity law & policy." },
+              { title:"Database & Systems",   desc:"Study DBMS, system analysis, Linux & Windows administration, and operating systems." },
+              { title:"Web Technologies",     desc:"Build web applications with Web Technology, CMS-based e-commerce, and server-side frameworks." },
+              { title:"AI & Multimedia",      desc:"Explore artificial intelligence, multimedia systems, and cutting-edge computing concepts." },
+              { title:"Industry Training",    desc:"Apply skills in a real professional setting through the structured industrial training program." },
+            ].map((item) => (
+              <div key={item.title} className="rounded-xl p-5 border"
+                style={{ background:"rgba(255,255,255,0.04)", borderColor:"rgba(255,255,255,0.1)" }}>
+                <h4 className="font-semibold text-white text-sm mb-2">{item.title}</h4>
+                <p className="text-xs leading-relaxed text-white/60">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-sm" style={{ background:"var(--color-navy)" }}>
+      <section className="section" style={{ background:"var(--color-surface)" }}>
+        <div className="container">
+          <SectionHeader
+            eyebrow="Semester-wise Curriculum"
+            title="BIT Course Structure"
+            subtitle={`4-year program · 8 Semesters · ${prog.total_credits} Total Credits · Lincoln University College`}
+          />
+          <SemesterTable semesters={BIT_SEMESTERS} accent={ACCENT} columns={2} />
+        </div>
+      </section>
+
+      <section className="section-sm" style={{ background:"var(--color-surface)" }}>
         <div className="container text-center">
-          <h2 className="font-serif text-2xl font-bold text-white mb-3">Interested in the BIT Program?</h2>
-          <p className="text-white/65 mb-6 max-w-md mx-auto text-sm">Launching in 2026. Register your interest and we'll notify you when admissions open.</p>
-          <Link href="/contact" className="btn-ghost">Register Interest <ArrowRight className="w-4 h-4" /></Link>
+          <h2 className="font-serif text-2xl font-bold mb-3" style={{ color:"var(--color-ink)" }}>Launch Your IT Career</h2>
+          <p className="text-[0.9375rem] mb-6 max-w-md mx-auto" style={{ color:"var(--color-muted)" }}>BIT admissions are open. Join a program built for the technology professionals of tomorrow.</p>
+          <Link href="/admission" className="btn-primary" style={{ background:"#059669", borderColor:"#059669" }}>Apply Now <ArrowRight className="w-4 h-4" /></Link>
         </div>
       </section>
     </>

@@ -63,13 +63,14 @@
   "programs": [
     {
       "id": "bhm",
-      "name": "Bachelor of Hotel Management",
+      "name": "Bachelor of Science (Hons) in Hospitality Management",
       "short_name": "BHM",
       "level": "Bachelor",
       "duration": "4 years",
       "total_semesters": 8,
+      "total_credits": 120,
       "status": "active",
-      "description": "Industry-aligned BHM program operating under the SCHOTEL model, ensuring practical expertise for global hospitality careers.",
+      "description": "Industry-aligned hospitality management program operating under the SCHOTEL model, ensuring practical expertise for global hospitality careers.",
       "model": "SCHOTEL",
       "focus_areas": [
         "Culinary Arts & Food Production",
@@ -99,6 +100,7 @@
       "level": "Master",
       "duration": "2 years",
       "total_semesters": 4,
+      "total_credits": 76,
       "status": "active",
       "description": "Engineered to equip students with strategic insights and leadership skills required to succeed in the complex world of modern business.",
       "focus_areas": [
@@ -125,14 +127,93 @@
       "eligibility": "Bachelor's degree in any discipline with minimum 50% aggregate"
     },
     {
+      "id": "bba",
+      "name": "Bachelor (Hons) in Business Administration",
+      "short_name": "BBA",
+      "level": "Bachelor",
+      "duration": "4 years",
+      "total_semesters": 8,
+      "total_credits": 135,
+      "status": "active",
+      "description": "A comprehensive business program that equips students with practical knowledge in management, marketing, finance, and entrepreneurship for modern business environments.",
+      "focus_areas": [
+        "Principles of Management",
+        "Marketing & Consumer Behavior",
+        "Financial Management",
+        "Human Resource Management",
+        "Entrepreneurship & Innovation",
+        "Business Law & Ethics",
+        "Strategic Management",
+        "Operations Management"
+      ],
+      "target": "Aspiring Business Leaders",
+      "experiential_learning": true,
+      "batches": ["2024", "2025"],
+      "career_paths": [
+        "Business Manager",
+        "Marketing Executive",
+        "Financial Analyst",
+        "HR Officer",
+        "Entrepreneur",
+        "Operations Manager",
+        "Business Development Executive"
+      ],
+      "eligibility": "Completion of 10+2 or equivalent with minimum 40% aggregate"
+    },
+    {
+      "id": "bcs",
+      "name": "Bachelor of Computer Science (Hons) - Network Technology & Cybersecurity",
+      "short_name": "BCS",
+      "level": "Bachelor",
+      "duration": "4 years",
+      "total_semesters": 8,
+      "total_credits": 125,
+      "status": "active",
+      "description": "A specialized computer science program focused on network technology and cybersecurity, preparing graduates to protect and manage critical digital infrastructure.",
+      "specializations": [
+        {
+          "name": "Network Technology",
+          "description": "Design, implement, and manage enterprise-level network infrastructure across LAN, WAN, and cloud environments."
+        },
+        {
+          "name": "Cybersecurity",
+          "description": "Ethical hacking, penetration testing, digital forensics, cryptography, and security operations management."
+        }
+      ],
+      "focus_areas": [
+        "Network Administration & Architecture",
+        "Cybersecurity & Ethical Hacking",
+        "Cryptography & Digital Forensics",
+        "Cloud Computing & Security",
+        "Database & System Administration",
+        "Programming & Software Development",
+        "Cyber Law & Policy",
+        "Security Operations Center (SOC)"
+      ],
+      "target": "Future Cybersecurity Professionals",
+      "experiential_learning": true,
+      "batches": ["2025"],
+      "career_paths": [
+        "Network Engineer",
+        "Cybersecurity Analyst",
+        "Penetration Tester",
+        "Digital Forensics Specialist",
+        "Security Operations Center Analyst",
+        "Cloud Security Engineer",
+        "System Administrator",
+        "IT Consultant"
+      ],
+      "eligibility": "Completion of 10+2 with Science/Math or equivalent with minimum 40% aggregate"
+    },
+    {
       "id": "bit",
-      "name": "Bachelor of Information Technology",
+      "name": "Bachelor of Information Technology (Hons)",
       "short_name": "BIT",
       "level": "Bachelor",
-      "duration": "3 years",
-      "total_semesters": 6,
-      "status": "coming_soon",
-      "expected_intake": "2026",
+      "duration": "4 years",
+      "total_semesters": 8,
+      "total_credits": 120,
+      "status": "active",
       "affiliation": "Lincoln University College, Malaysia",
       "description": "The Bachelor of Information Technology program prepares students for in-demand IT careers. Learn to design, manage, and support websites, applications, and network systems across industries such as business, healthcare, education, and government. Students can specialize in network security or mobile and web application development, graduating with practical, job-ready skills.",
       "overview": "The BIT program at Western Mega College, affiliated with Lincoln University College Malaysia, provides a strong blend of theoretical knowledge and hands-on experience in information technology. Graduates are equipped to solve, support, troubleshoot, and design everything from websites to applications and network systems.",
@@ -168,81 +249,7 @@
         "IT Support Engineer",
         "Cloud Solutions Architect"
       ],
-      "eligibility": "Completion of 10+2 or equivalent with minimum 40% aggregate or 2.0 CGPA",
-      "curriculum": {
-        "total_credits": 129,
-        "semesters": [
-          {
-            "semester": 1,
-            "total_credits": 23,
-            "subjects": [
-              { "name": "Internet Fundamentals & Applications", "code": "BIT 111", "classification": "Major", "credits": 4 },
-              { "name": "Basic Computer Architecture",          "code": "BIT 112", "classification": "Major", "credits": 4 },
-              { "name": "Business English",                     "code": "BIT 113", "classification": "Compulsory", "credits": 3 },
-              { "name": "Computer Network",                     "code": "BIT 114", "classification": "Major", "credits": 4 },
-              { "name": "C-Programming",                        "code": "BIT 115", "classification": "Major", "credits": 4 },
-              { "name": "Math I",                               "code": "BIT 116", "classification": "Major", "credits": 4 }
-            ]
-          },
-          {
-            "semester": 2,
-            "total_credits": 24,
-            "subjects": [
-              { "name": "Advanced Computer Network",   "code": "BIT 121", "classification": "Major",      "credits": 4 },
-              { "name": "Data Structure & Algorithm",  "code": "BIT 234", "classification": "Major",      "credits": 4 },
-              { "name": "Discrete Mathematics",        "code": "BIT 114", "classification": "Compulsory", "credits": 4 },
-              { "name": "Java Programming",            "code": "BIT 243", "classification": "Major",      "credits": 4 },
-              { "name": "E-Commerce",                  "code": "BIT 232", "classification": "Major",      "credits": 4 },
-              { "name": "Digital Logic",               "code": "BIT 126", "classification": "Major",      "credits": 4 }
-            ]
-          },
-          {
-            "semester": 3,
-            "total_credits": 21,
-            "subjects": [
-              { "name": "Database Management System",  "code": "BIT 231",   "classification": "Major",      "credits": 4 },
-              { "name": "Cyber Security Law & Policy", "code": "CSLPA 232", "classification": "Major",      "credits": 4 },
-              { "name": "Web Technology",              "code": "BIT 233",   "classification": "Compulsory", "credits": 4 },
-              { "name": "System Analysis & Design",   "code": "BIT 123",   "classification": "Major",      "credits": 4 },
-              { "name": "Operating System",            "code": "BIT 235",   "classification": "Major",      "credits": 3 },
-              { "name": "Leadership & Human Relations","code": "BIT 122",   "classification": "Compulsory", "credits": 2 }
-            ]
-          },
-          {
-            "semester": 4,
-            "total_credits": 20,
-            "subjects": [
-              { "name": "Mobile Computing",   "code": "BIT 351", "classification": "Major",      "credits": 4 },
-              { "name": "Multimedia System",  "code": "BIT 364", "classification": "Major",      "credits": 4 },
-              { "name": "Real Time System",   "code": "BIT 352", "classification": "Compulsory", "credits": 4 },
-              { "name": "Software Engineering","code": "BIT 244", "classification": "Major",      "credits": 4 },
-              { "name": "RDBMS with SQL",     "code": "BIT 245", "classification": "Major",      "credits": 4 }
-            ]
-          },
-          {
-            "semester": 5,
-            "total_credits": 23,
-            "subjects": [
-              { "name": "Software Project Management",              "code": "BIT 362", "classification": "Major",      "credits": 4 },
-              { "name": "Social & Professional Issues in Computing","code": "BIT 351", "classification": "Major",      "credits": 3 },
-              { "name": "Artificial Intelligence",                  "code": "BIT 353", "classification": "Compulsory", "credits": 3 },
-              { "name": "Compiler Design & Construction",           "code": "BIT 354", "classification": "Major",      "credits": 4 },
-              { "name": "Project Work",                             "code": "BIT 355", "classification": "Major",      "credits": 6 },
-              { "name": "Business Research Methods",                "code": "BRM 356", "classification": "Major",      "credits": 3 }
-            ]
-          },
-          {
-            "semester": 6,
-            "total_credits": 18,
-            "subjects": [
-              { "name": "Cloud Computing",                              "code": "BIT 361", "classification": "Major",      "credits": 4 },
-              { "name": "Emerging Programming Platforms & Technologies","code": "BIT 362", "classification": "Major",      "credits": 4 },
-              { "name": "WML & WAP Programming",                        "code": "BIT 363", "classification": "Compulsory", "credits": 4 },
-              { "name": "Industrial Training",                          "code": "BIT 365", "classification": "Major",      "credits": 6 }
-            ]
-          }
-        ]
-      }
+      "eligibility": "Completion of 10+2 or equivalent with minimum 40% aggregate or 2.0 CGPA"
     }
   ],
 

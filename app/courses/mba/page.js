@@ -2,59 +2,47 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, Clock, BookOpen, Users, Briefcase, Star, TrendingUp } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
+import SemesterTable from "@/components/curriculum/SemesterTable";
 import data from "@/lib/data";
 
 const MBA_SEMESTERS = [
-  { sem: 1, total_credits: 17, subjects: [
-    { code: "MBA 111", name: "Principles of Management",          classification: "Core",       credits: 3 },
-    { code: "MBA 112", name: "Business Statistics",               classification: "Core",       credits: 3 },
-    { code: "MBA 113", name: "Managerial Economics",              classification: "Core",       credits: 3 },
-    { code: "MBA 114", name: "Financial Accounting",              classification: "Core",       credits: 3 },
-    { code: "MBA 115", name: "Marketing Management",              classification: "Core",       credits: 3 },
-    { code: "MBA 116", name: "Business Communication",            classification: "Compulsory", credits: 2 },
+  { sem: "Semester 1", total_credits: 17, subjects: [
+    { code: "ACC501", name: "Business Accounting & Finance",          credits: 3 },
+    { code: "ECO501", name: "Business Economics",                     credits: 3 },
+    { code: "HRM501", name: "Human Resource Management",              credits: 3 },
+    { code: "MGT513", name: "Managerial Communications",              credits: 4 },
+    { code: "MGT516", name: "Business Environment Analysis",          credits: 4 },
   ]},
-  { sem: 2, total_credits: 18, subjects: [
-    { code: "MBA 221", name: "Strategic Management",              classification: "Core",       credits: 3 },
-    { code: "MBA 222", name: "Organizational Behavior",           classification: "Core",       credits: 3 },
-    { code: "MBA 223", name: "Corporate Finance",                 classification: "Core",       credits: 3 },
-    { code: "MBA 224", name: "Research Methodology",              classification: "Compulsory", credits: 3 },
-    { code: "MBA 225", name: "Human Resource Management",         classification: "Core",       credits: 3 },
-    { code: "MBA 226", name: "Operations Management",             classification: "Core",       credits: 3 },
+  { sem: "Semester 2", total_credits: 13, subjects: [
+    { code: "MGT507", name: "Research Methodology",                   credits: 4 },
+    { code: "MGT510", name: "Operation Management",                   credits: 3 },
+    { code: "MKT501", name: "Marketing Management",                   credits: 3 },
+    { code: "ORG501", name: "Organizational Behavior",                credits: 3 },
   ]},
-  { sem: 3, total_credits: 18, subjects: [
-    { code: "MBA 331", name: "Business Law & Ethics",             classification: "Core",       credits: 3 },
-    { code: "MBA 332", name: "Investment & Portfolio Management", classification: "Core",       credits: 3 },
-    { code: "MBA 333", name: "Consumer Behavior",                 classification: "Core",       credits: 3 },
-    { code: "MBA 334", name: "Entrepreneurship & Innovation",     classification: "Core",       credits: 3 },
-    { code: "MBA 335", name: "International Business",            classification: "Core",       credits: 3 },
-    { code: "MBA 336", name: "Elective I",                        classification: "Elective",   credits: 3 },
+  { sem: "Semester 3", total_credits: 21, subjects: [
+    { code: "MGT505", name: "Strategic Management",                   credits: 3 },
+    { code: "MGT518", name: "Financial Management",                   credits: 4 },
+    { code: "MGT504", name: "Entrepreneurship Management",            credits: 3 },
+    { code: "MGT519", name: "Sales & Promotions Management",          credits: 4 },
+    { code: "MGT501", name: "International Business",                 credits: 3 },
+    { code: "HRD501", name: "Human Resource Development and Leadership", credits: 4 },
   ]},
-  { sem: 4, total_credits: 21, subjects: [
-    { code: "MBA 441", name: "Corporate Governance",              classification: "Core",       credits: 3 },
-    { code: "MBA 442", name: "Leadership & Change Management",    classification: "Core",       credits: 3 },
-    { code: "MBA 443", name: "Advanced Marketing Strategy",       classification: "Core",       credits: 3 },
-    { code: "MBA 444", name: "Financial Planning & Analysis",     classification: "Core",       credits: 3 },
-    { code: "MBA 445", name: "Thesis / Research Project",         classification: "Major",      credits: 6 },
-    { code: "MBA 446", name: "Elective II",                       classification: "Elective",   credits: 3 },
+  { sem: "Semester 4", total_credits: 25, subjects: [
+    { code: "MGT520", name: "Banking & Insurance",                    credits: 4 },
+    { code: "MGT521", name: "Customer Relationship Management",       credits: 4 },
+    { code: "MGT522", name: "Conflict Management & Negotiation Skills", credits: 4 },
+    { code: "MGT512", name: "Management of Data",                     credits: 4 },
+    { code: "MGT503", name: "Business Ethics & Governance",           credits: 3 },
+    { code: "MGT508", name: "Graduate Research Project Paper",        credits: 6 },
   ]},
 ];
 
-function ClassBadge({ type }) {
-  const map = {
-    Core:       { bg: "#EEF2FF", color: "#4F46E5" },
-    Compulsory: { bg: "#FEF3C7", color: "#D97706" },
-    Major:      { bg: "#EEF2FF", color: "#4F46E5" },
-    Elective:   { bg: "#F0FDF4", color: "#15803D" },
-  };
-  const s = map[type] || map.Core;
-  return (
-    <span style={{
-      fontSize: "0.6rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em",
-      padding: "0.15rem 0.45rem", borderRadius: 4,
-      background: s.bg, color: s.color, whiteSpace: "nowrap",
-    }}>{type}</span>
-  );
-}
+const ACCENT = {
+  ring: "border-blue-200",
+  bg:   "bg-blue-50",
+  text: "text-blue-700",
+  badge:"bg-blue-100 text-blue-700",
+};
 
 const prog = data.programs.find((p) => p.id === "mba");
 
@@ -67,7 +55,6 @@ export default function MBAPage() {
   return (
     <>
       <div className="page-hero" style={{ position: "relative" }}>
-        {/* Faded business/office background */}
         <div className="absolute inset-0" style={{ zIndex: 0 }}>
           <Image
             src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80"
@@ -92,10 +79,10 @@ export default function MBAPage() {
       <div style={{ background:"var(--color-surface)", borderBottom:"1px solid var(--color-border)" }}>
         <div className="container py-5 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { icon: Clock,   label:"Duration",      value: prog.duration },
-            { icon: BookOpen,label:"Semesters",     value: `${prog.total_semesters} Semesters` },
-            { icon: Users,   label:"Active Batches",value: prog.batches?.join(", ") },
-            { icon: Briefcase,label:"Level",        value: prog.level },
+            { icon: Clock,     label:"Duration",      value: prog.duration },
+            { icon: BookOpen,  label:"Semesters",     value: `${prog.total_semesters} Semesters` },
+            { icon: Users,     label:"Active Batches",value: prog.batches?.join(", ") },
+            { icon: TrendingUp,label:"Total Credits",  value: `${prog.total_credits} Credits` },
           ].map((s) => (
             <div key={s.label} className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
@@ -150,7 +137,7 @@ export default function MBAPage() {
                   ))}
                 </ul>
                 <div className="pt-5 border-t space-y-2" style={{ borderColor:"var(--color-border)" }}>
-                  <Link href="/admission" className="btn-gold w-full justify-center">Apply for MBA <ArrowRight className="w-4 h-4" /></Link>
+                  <Link href="/admission" className="btn-primary w-full justify-center">Apply for MBA <ArrowRight className="w-4 h-4" /></Link>
                   <Link href="/contact" className="btn-outline-soft w-full justify-center">Enquire Now</Link>
                 </div>
               </div>
@@ -161,17 +148,18 @@ export default function MBAPage() {
 
       <section className="section" style={{ background:"var(--color-navy)" }}>
         <div className="container">
-          <SectionHeader eyebrow="MBA Pillars" title="Core Competency Areas" light />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <SectionHeader eyebrow="Curriculum Highlights" title="What You Will Learn" light />
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { icon: TrendingUp, title:"Strategic Mgmt",   desc:"Business strategy, competitive analysis, and corporate planning frameworks." },
-              { icon: Briefcase,  title:"Finance",           desc:"Financial analysis, investment decisions, cost accounting, and financial modeling." },
-              { icon: Users,      title:"Marketing",         desc:"Market research, brand building, digital marketing, and consumer behavior." },
-              { icon: Star,       title:"Human Resources",   desc:"Talent management, organizational behavior, HR strategy, and labor law." },
+              { title:"Business Strategy",      desc:"Develop the ability to formulate, implement, and evaluate cross-functional decisions that align with organizational goals." },
+              { title:"Financial Acumen",        desc:"Understand financial statements, valuation, investment appraisal, and managerial accounting for decision-making." },
+              { title:"Marketing Excellence",    desc:"Explore consumer behavior, brand management, digital marketing, and strategic market analysis." },
+              { title:"Leadership & HR",         desc:"Build skills in talent management, organizational behavior, conflict resolution, and leadership development." },
+              { title:"Research & Analytics",    desc:"Apply quantitative and qualitative research methods to solve real business problems." },
+              { title:"Entrepreneurship",        desc:"Turn ideas into ventures — business planning, funding, innovation management, and startup ecosystems." },
             ].map((item) => (
               <div key={item.title} className="rounded-xl p-5 border"
                 style={{ background:"rgba(255,255,255,0.04)", borderColor:"rgba(255,255,255,0.1)" }}>
-                <item.icon className="w-5 h-5 mb-3" style={{ color:"var(--color-gold)" }} />
                 <h4 className="font-semibold text-white text-sm mb-2">{item.title}</h4>
                 <p className="text-xs leading-relaxed text-white/60">{item.desc}</p>
               </div>
@@ -180,56 +168,22 @@ export default function MBAPage() {
         </div>
       </section>
 
-      {/* Semester-wise Curriculum */}
       <section className="section" style={{ background:"var(--color-surface)" }}>
         <div className="container">
-          <SectionHeader eyebrow="Semester-wise Curriculum" title="MBA Course Structure" subtitle="2-year program · 4 Semesters · 74 Total Credits · Lincoln University College, Malaysia" />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
-            {MBA_SEMESTERS.map(({ sem, subjects, total_credits }) => (
-              <div key={sem} className="rounded-xl border overflow-hidden"
-                style={{ background:"#fff", borderColor:"var(--color-border)" }}>
-                <div className="flex items-center justify-between px-4 py-2.5"
-                  style={{ background:"var(--color-blue-50)", borderBottom:"1px solid var(--color-blue-100)" }}>
-                  <span className="text-xs font-bold uppercase tracking-wider" style={{ color:"var(--color-blue)" }}>
-                    Semester {sem}
-                  </span>
-                  <span style={{ fontSize:"0.6875rem", color:"var(--color-blue)", fontWeight:600 }}>{total_credits} Credits</span>
-                </div>
-                <div style={{ overflowX:"auto" }}>
-                  <table style={{ width:"100%", borderCollapse:"collapse", fontSize:"0.75rem" }}>
-                    <thead>
-                      <tr style={{ background:"var(--color-surface)" }}>
-                        <th style={{ padding:"0.45rem 0.75rem", textAlign:"left", color:"var(--color-muted)", fontWeight:600, fontSize:"0.6875rem", borderBottom:"1px solid var(--color-border)", whiteSpace:"nowrap" }}>Code</th>
-                        <th style={{ padding:"0.45rem 0.75rem", textAlign:"left", color:"var(--color-muted)", fontWeight:600, fontSize:"0.6875rem", borderBottom:"1px solid var(--color-border)", width:"100%" }}>Subject</th>
-                        <th style={{ padding:"0.45rem 0.75rem", textAlign:"center", color:"var(--color-muted)", fontWeight:600, fontSize:"0.6875rem", borderBottom:"1px solid var(--color-border)", whiteSpace:"nowrap" }}>Type</th>
-                        <th style={{ padding:"0.45rem 0.75rem", textAlign:"center", color:"var(--color-muted)", fontWeight:600, fontSize:"0.6875rem", borderBottom:"1px solid var(--color-border)", whiteSpace:"nowrap" }}>Cr.</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {subjects.map((s, i) => (
-                        <tr key={s.code} style={{ background: i % 2 === 0 ? "#fff" : "var(--color-surface)" }}>
-                          <td style={{ padding:"0.45rem 0.75rem", color:"var(--color-blue)", fontWeight:600, fontSize:"0.6875rem", whiteSpace:"nowrap", borderBottom:"1px solid var(--color-border-light)" }}>{s.code}</td>
-                          <td style={{ padding:"0.45rem 0.75rem", color:"var(--color-ink)", borderBottom:"1px solid var(--color-border-light)" }}>{s.name}</td>
-                          <td style={{ padding:"0.45rem 0.75rem", textAlign:"center", borderBottom:"1px solid var(--color-border-light)" }}>
-                            <ClassBadge type={s.classification} />
-                          </td>
-                          <td style={{ padding:"0.45rem 0.75rem", textAlign:"center", fontWeight:700, color:"var(--color-ink)", borderBottom:"1px solid var(--color-border-light)" }}>{s.credits}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            ))}
-          </div>
+          <SectionHeader
+            eyebrow="Semester-wise Curriculum"
+            title="MBA Course Structure"
+            subtitle={`2-year program · 4 Semesters · ${prog.total_credits} Total Credits · Lincoln University College`}
+          />
+          <SemesterTable semesters={MBA_SEMESTERS} accent={ACCENT} columns={2} />
         </div>
       </section>
 
       <section className="section-sm" style={{ background:"var(--color-surface)" }}>
         <div className="container text-center">
-          <h2 className="font-serif text-2xl font-bold mb-3" style={{ color:"var(--color-ink)" }}>Advance Your Career with an MBA</h2>
-          <p className="text-[0.9375rem] mb-6 max-w-md mx-auto" style={{ color:"var(--color-muted)" }}>MBA admissions are open. Shape your leadership future with WMC.</p>
-          <Link href="/admission" className="btn-gold">Apply Now <ArrowRight className="w-4 h-4" /></Link>
+          <h2 className="font-serif text-2xl font-bold mb-3" style={{ color:"var(--color-ink)" }}>Take the Next Step in Your Career</h2>
+          <p className="text-[0.9375rem] mb-6 max-w-md mx-auto" style={{ color:"var(--color-muted)" }}>MBA admissions are open. Elevate your leadership and business expertise.</p>
+          <Link href="/admission" className="btn-primary">Apply Now <ArrowRight className="w-4 h-4" /></Link>
         </div>
       </section>
     </>

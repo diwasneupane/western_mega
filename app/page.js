@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   ArrowRight, Star, Calendar, BookOpen, Users, Award, Globe,
-  ChevronRight, GraduationCap, Briefcase, Cpu, MapPin,
+  ChevronRight, GraduationCap, Briefcase, Cpu, MapPin, Shield,
   CheckCircle, TrendingUp, Building2, Phone, Clock, Sparkles
 } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
@@ -11,11 +11,13 @@ import data from "@/lib/data";
 
 const { college, programs, principal, alumni_testimonials, corporate_partners, faqs, value_propositions, events, blogs, media } = data;
 
-const PROG_ICONS = { bhm: GraduationCap, mba: Briefcase, bit: Cpu };
+const PROG_ICONS = { bhm: GraduationCap, mba: Briefcase, bba: Briefcase, bcs: Shield, bit: Cpu };
 const PROG_ACC = {
   bhm: { color: "var(--color-gold)",   bg: "var(--color-gold-50)",  border: "var(--color-gold-100)" },
   mba: { color: "var(--color-blue)",   bg: "var(--color-blue-50)",  border: "var(--color-blue-100)" },
-  bit: { color: "#059669",              bg: "#f0fdf4",               border: "#bbf7d0" },
+  bba: { color: "#7c3aed",             bg: "#f5f3ff",               border: "#ddd6fe" },
+  bcs: { color: "#dc2626",             bg: "#fef2f2",               border: "#fecaca" },
+  bit: { color: "#059669",             bg: "#f0fdf4",               border: "#bbf7d0" },
 };
 
 function FAQItem({ question, answer }) {
@@ -68,9 +70,9 @@ export default function HomePage() {
 
               <h1 className="font-serif font-bold mb-5"
                 style={{ fontSize:"clamp(2.25rem, 4vw, 3.5rem)", lineHeight:1.1, letterSpacing:"-0.03em", color:"var(--color-ink)" }}>
-                Build Your Career in{" "}
-                <span style={{ color:"var(--color-blue)" }}>BHM, MBA</span>
-                {" "}&amp; <span style={{ color:"var(--color-gold)" }}>BIT</span>{" "}
+                Shape Your Career in{" "}
+                <span style={{ color:"var(--color-blue)" }}>Business, Hospitality</span>
+                {" "}&amp; <span style={{ color:"var(--color-gold)" }}>Technology</span>{" "}
                 at WMC
               </h1>
 
@@ -90,7 +92,7 @@ export default function HomePage() {
               <div className="flex flex-wrap gap-5">
                 {[
                   { value: college.founded,              label:"Founded" },
-                  { value:"3",                            label:"Programs" },
+                  { value:"5",                            label:"Programs" },
                   { value:`${college.google_rating}★`,  label:"Google Rating" },
                   { value:"500+",                         label:"Alumni" },
                 ].map((s) => (
@@ -191,7 +193,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {programs.map((prog) => {
               const Icon = PROG_ICONS[prog.id] || GraduationCap;
               const acc  = PROG_ACC[prog.id] || PROG_ACC.mba;
@@ -206,9 +208,7 @@ export default function HomePage() {
                         style={{ background:acc.bg, border:`1px solid ${acc.border}` }}>
                         <Icon className="w-5 h-5" style={{ color:acc.color }} />
                       </div>
-                      {prog.status === "coming_soon"
-                        ? <span className="badge badge-gray">2026</span>
-                        : <span className="badge badge-green">Enrolling</span>}
+                      <span className="badge badge-green">Enrolling</span>
                     </div>
                     <p className="text-[0.68rem] font-bold uppercase tracking-widest mb-1" style={{ color:acc.color }}>{prog.short_name}</p>
                     <h3 className="font-serif font-bold text-base mb-2" style={{ color:"var(--color-ink)" }}>{prog.name}</h3>
@@ -218,6 +218,7 @@ export default function HomePage() {
                     <div className="flex items-center gap-3 text-xs mb-4" style={{ color:"var(--color-muted)" }}>
                       <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> {prog.duration}</span>
                       <span className="flex items-center gap-1"><BookOpen className="w-3 h-3" /> {prog.total_semesters} Sem</span>
+                      {prog.total_credits && <span className="flex items-center gap-1"><Award className="w-3 h-3" /> {prog.total_credits} Cr</span>}
                     </div>
                     <Link href={`/courses/${prog.id}`}
                       className="flex items-center gap-1.5 text-sm font-semibold group-hover:gap-2.5 transition-all"

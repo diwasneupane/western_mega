@@ -5,9 +5,11 @@ import Image from "next/image";
 import { ChevronDown, MapPin, Phone, X } from "lucide-react";
 
 const PROGRAMS = [
-  { label: "Bachelor of Hotel Management", sub: "BHM · 4 Years · Enrolling", href: "/courses/bhm" },
+  { label: "Bachelor of Science (Hons) in Hospitality Management", sub: "BHM · 4 Years · Enrolling", href: "/courses/bhm" },
   { label: "Master of Business Administration", sub: "MBA · 2 Years · Enrolling", href: "/courses/mba" },
-  { label: "Bachelor of Information Technology", sub: "BIT · Coming 2026", href: "/courses/bit", badge: true },
+  { label: "Bachelor (Hons) in Business Administration", sub: "BBA · 4 Years · Enrolling", href: "/courses/bba" },
+  { label: "Bachelor of Computer Science (Hons) – Network Technology & Cybersecurity", sub: "BCS · 4 Years · Enrolling", href: "/courses/bcs" },
+  { label: "Bachelor of Information Technology (Hons)", sub: "BIT · 4 Years · Enrolling", href: "/courses/bit" },
 ];
 const TEAM = [
   { label: "Our Principal",      href: "/principal" },
