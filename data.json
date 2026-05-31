@@ -682,15 +682,15 @@
 
   "admission": {
     "status": "open",
-    "banner": "Admissions Open for BHM & MBA Programs – Intake 2025",
-    "note": "Please keep checking the website for up-to-date information about admission dates and procedures. BIT admissions will open in 2026.",
+    "banner": "Admissions Open 2026 — BHM, MBA, BBA, BCS & BIT Programs Now Enrolling",
+    "note": "Seats are limited. Early applicants receive priority consideration. All five programs are now open for the 2026 intake. Contact our admissions office for program-specific deadlines.",
     "contact": {
       "phone": ["071422131", "071422132", "071422134", "9857071252", "9857070832"],
       "email": "info@westernmegacollege.edu.np"
     },
     "form_fields": {
       "personal": ["First Name", "Middle Name", "Last Name", "Email Address", "Contact Number", "Date of Birth (AD)", "Religion", "Marital Status", "Program Interested In"],
-      "program_options": ["BHM", "MBA", "BIT (Coming Soon)"],
+      "program_options": ["BHM", "MBA", "BBA", "BCS", "BIT"],
       "religion_options": ["Hinduism", "Buddhism", "Christianity", "Islam", "Other"],
       "marital_status_options": ["Single", "Married", "Divorced", "Widowed"],
       "address": ["Province", "District", "VDC/Municipality", "Ward No."],
