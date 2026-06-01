@@ -188,12 +188,20 @@ export default function AdmissionPage() {
       setError('Please fill in all required fields before continuing.');
       return;
     }
+    if (step === 1 && form.phone && form.phone.length !== 10) {
+      setError('Phone number must be exactly 10 digits.');
+      return;
+    }
     if (step === 2 && !form.program) {
       setError('Please select a program to continue.');
       return;
     }
     if (step === 3 && (!form.address || !form.guardianName || !form.guardianPhone)) {
       setError('Please fill in address, guardian name, and guardian phone before continuing.');
+      return;
+    }
+    if (step === 3 && form.guardianPhone && form.guardianPhone.length !== 10) {
+      setError('Guardian phone number must be exactly 10 digits.');
       return;
     }
     setError('');
@@ -417,9 +425,27 @@ export default function AdmissionPage() {
                         <input style={inputStyle} type="email" placeholder="you@example.com"
                           value={form.email} onChange={(e) => set('email', e.target.value)} />
                       </Field>
-                      <Field label="Phone Number" required hint="Include country code e.g. +977">
-                        <input style={inputStyle} type="tel" placeholder="+977 9XXXXXXXXX"
-                          value={form.phone} onChange={(e) => set('phone', e.target.value)} />
+                      <Field label="Phone Number" required hint="10-digit number e.g. 9812345678">
+                        <div style={{ display: 'flex', gap: 0 }}>
+                          <span style={{
+                            display: 'flex', alignItems: 'center', padding: '10px 12px',
+                            background: '#F1F5F9', border: '1px solid #CBD5E1',
+                            borderRight: 'none', borderRadius: '8px 0 0 8px',
+                            fontSize: 14, fontWeight: 500, color: '#475569', whiteSpace: 'nowrap',
+                          }}>+977</span>
+                          <input
+                            style={{ ...inputStyle, borderRadius: '0 8px 8px 0', flex: 1 }}
+                            type="text"
+                            inputMode="numeric"
+                            placeholder="9812345678"
+                            maxLength={10}
+                            value={form.phone}
+                            onChange={(e) => {
+                              const val = e.target.value.replace(/\D/g, '');
+                              set('phone', val);
+                            }}
+                          />
+                        </div>
                       </Field>
                     </div>
                   </StepCard>
@@ -485,9 +511,27 @@ export default function AdmissionPage() {
                           <input style={inputStyle} type="text" placeholder="Parent or guardian's name"
                             value={form.guardianName} onChange={(e) => set('guardianName', e.target.value)} />
                         </Field>
-                        <Field label="Guardian Phone" required>
-                          <input style={inputStyle} type="tel" placeholder="+977 9XXXXXXXXX"
-                            value={form.guardianPhone} onChange={(e) => set('guardianPhone', e.target.value)} />
+                        <Field label="Guardian Phone" required hint="10-digit number">
+                          <div style={{ display: 'flex', gap: 0 }}>
+                            <span style={{
+                              display: 'flex', alignItems: 'center', padding: '10px 12px',
+                              background: '#F1F5F9', border: '1px solid #CBD5E1',
+                              borderRight: 'none', borderRadius: '8px 0 0 8px',
+                              fontSize: 14, fontWeight: 500, color: '#475569', whiteSpace: 'nowrap',
+                            }}>+977</span>
+                            <input
+                              style={{ ...inputStyle, borderRadius: '0 8px 8px 0', flex: 1 }}
+                              type="text"
+                              inputMode="numeric"
+                              placeholder="9812345678"
+                              maxLength={10}
+                              value={form.guardianPhone}
+                              onChange={(e) => {
+                                const val = e.target.value.replace(/\D/g, '');
+                                set('guardianPhone', val);
+                              }}
+                            />
+                          </div>
                         </Field>
                       </div>
                       <Field label="Message or Questions" hint="Optional">
